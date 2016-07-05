@@ -84,6 +84,10 @@ public class StatisticsGridView extends BaseScrollerView {
             mMonthdayParent.removeAllViews();
         }
 
+        if(mHistogramLayout == null) {
+            return;
+        }
+
         int position = 0;
         // 行
         float row = 0f;
