@@ -14,7 +14,7 @@ import android.view.View;
  * Created by ludexiang on 16/7/1.
  */
 public class HistogramView extends View {
-    private static final int HISTOGRAM_WIDTH = 50;
+    private static final int HISTOGRAM_WIDTH = 60;
 
     private Rect mRedRect;
     private Rect mBlueRect;

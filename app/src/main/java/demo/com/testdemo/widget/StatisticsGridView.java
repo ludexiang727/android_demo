@@ -25,7 +25,7 @@ public class StatisticsGridView extends BaseScrollerView {
     private LinearLayout mMonthdayParent;
     private BrokenLineView mBlackBrokenLine, mGreenBrokenLine, mRedBrokenLine;
 
-    private static final int HISTOGRAM_WIDTH = 50;
+    private static final int HISTOGRAM_WIDTH = 60;
 
 
     private int mCurrentMonth = 7;
@@ -140,14 +140,15 @@ public class StatisticsGridView extends BaseScrollerView {
     }
 
     private synchronized int drawBrokeLine(int position, int r) {
+//        if (r == 0 || r == 2 || r == 4 || r == 6 || r == 8 || r == 10) {
         if (r % 2 == 0) {
             int gridViewHeight = getMeasuredHeight();
             HistogramModel model = mHistogramList.get(position);
             mBlackBrokenLine.setBrokeLinePoint(r, gridViewHeight - model.getBlackPoint());
 
-            mGreenBrokenLine.setBrokeLinePoint(r, gridViewHeight - model.getGreenPoint());
-
-            mRedBrokenLine.setBrokeLinePoint(r, gridViewHeight - model.getRedPoint());
+//            mGreenBrokenLine.setBrokeLinePoint(r, gridViewHeight - model.getGreenPoint());
+//
+//            mRedBrokenLine.setBrokeLinePoint(r, gridViewHeight - model.getRedPoint());
 
             position++;
         }

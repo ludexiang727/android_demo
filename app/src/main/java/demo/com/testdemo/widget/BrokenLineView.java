@@ -6,6 +6,7 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.util.AttributeSet;
+import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,7 +18,7 @@ import demo.com.testdemo.R;
  */
 public class BrokenLineView extends BaseScrollerView {
 
-    private static final float HISTOGRAM_WIDTH = 50;
+    private static final float HISTOGRAM_WIDTH = 60;
     private static final float CENTER_LEFT = HISTOGRAM_WIDTH / 2;
 
     private List<Integer> mPointList = new ArrayList<Integer>();
@@ -69,6 +70,7 @@ public class BrokenLineView extends BaseScrollerView {
         linePath.reset();
         if (mPointList != null && mPointList.size() > 0) {
             for (int i = 0; i < mPointList.size(); i++) {
+                Log.e("ldx", i + "  fuck onDraw.........." + CENTER_LEFT + " " + (mPointCenter.get(i) * HISTOGRAM_WIDTH) + " y :: " + (mPointList.get(i) * 1f));
                 // 划线
                 if (i == 0) {
                     linePath.moveTo(CENTER_LEFT + mPointCenter.get(0) * HISTOGRAM_WIDTH, mPointList.get(0) * 1f);
