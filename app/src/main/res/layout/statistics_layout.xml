@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e3e3e3">
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginRight="38dp"
+        android:layout_marginTop="90dp"
+        android:background="#e3e3e3"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <demo.com.testdemo.widget.StatisticsView
+            android:id="@+id/statistics_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </HorizontalScrollView>
+
+</RelativeLayout>

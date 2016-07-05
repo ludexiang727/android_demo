@@ -1,0 +1,61 @@
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 柱状图 -->
+    <LinearLayout
+        android:id="@+id/histogram__parent"
+        android:layout_width="match_parent"
+        android:layout_height="273dp"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:id="@+id/month_day_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/histogram__parent"/>
+
+    <!-- 网格 -->
+    <demo.com.testdemo.widget.StatisticsGridView
+        android:id="@+id/statistics_grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@id/histogram__parent"
+        android:layout_alignRight="@id/histogram__parent"
+        android:layout_alignBottom="@id/histogram__parent"
+        android:scrollbarAlwaysDrawHorizontalTrack="true"/>
+
+    <!-- 折线 - 黑 -->
+    <demo.com.testdemo.widget.BrokenLineView
+        android:id="@+id/black_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignLeft="@id/histogram__parent"
+        android:layout_alignRight="@id/histogram__parent"
+        app:broken_line_color="@android:color/black" />
+
+    <!-- 折线 - 绿 -->
+    <demo.com.testdemo.widget.BrokenLineView
+        android:id="@+id/green_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignLeft="@id/histogram__parent"
+        android:layout_alignRight="@id/histogram__parent"
+        app:broken_line_color="#476941" />
+
+    <!-- 折线 - 红 -->
+    <demo.com.testdemo.widget.BrokenLineView
+        android:id="@+id/red_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignLeft="@id/histogram__parent"
+        android:layout_alignRight="@id/histogram__parent"
+        app:broken_line_color="#ff0000" />
+
+</merge>
