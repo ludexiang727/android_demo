@@ -14,6 +14,7 @@ import android.view.View;
  * Created by ludexiang on 16/7/1.
  */
 public class HistogramView extends View {
+    private static final int HISTOGRAM_WIDTH = 50;
 
     private Rect mRedRect;
     private Rect mBlueRect;
@@ -33,9 +34,9 @@ public class HistogramView extends View {
     }
 
     public void setHistogram(int bottom, int whiteHeight, int blueHeight, int redHeight) {
-        mWhiteRect = new Rect(0, whiteHeight, 45, bottom);
-        mBlueRect = new Rect(0, blueHeight, 45, whiteHeight);
-        mRedRect = new Rect(0, redHeight, 45, blueHeight);
+        mWhiteRect = new Rect(0, whiteHeight, HISTOGRAM_WIDTH, bottom);
+        mBlueRect = new Rect(0, blueHeight, HISTOGRAM_WIDTH, whiteHeight);
+        mRedRect = new Rect(0, redHeight, HISTOGRAM_WIDTH, blueHeight);
     }
 
     @Override

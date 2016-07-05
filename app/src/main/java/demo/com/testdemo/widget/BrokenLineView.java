@@ -17,6 +17,9 @@ import demo.com.testdemo.R;
  */
 public class BrokenLineView extends BaseScrollerView {
 
+    private static final float HISTOGRAM_WIDTH = 50;
+    private static final float CENTER_LEFT = HISTOGRAM_WIDTH / 2;
+
     private List<Integer> mPointList = new ArrayList<Integer>();
     private List<Integer> mPointCenter = new ArrayList<Integer>();
 
@@ -68,12 +71,12 @@ public class BrokenLineView extends BaseScrollerView {
             for (int i = 0; i < mPointList.size(); i++) {
                 // 划线
                 if (i == 0) {
-                    linePath.moveTo(22.5f + mPointCenter.get(0) * 45, mPointList.get(0) * 1f);
+                    linePath.moveTo(CENTER_LEFT + mPointCenter.get(0) * HISTOGRAM_WIDTH, mPointList.get(0) * 1f);
                 } else {
-                    linePath.lineTo(22.5f + mPointCenter.get(i) * 45, mPointList.get(i) * 1f);
+                    linePath.lineTo(CENTER_LEFT + mPointCenter.get(i) * HISTOGRAM_WIDTH, mPointList.get(i) * 1f);
                 }
                 // 画圆点
-                mBrokePointPath.addCircle(22.5f + mPointCenter.get(i) * 45, mPointList.get(i) * 1f, 6, Path.Direction.CCW);
+                mBrokePointPath.addCircle(CENTER_LEFT + mPointCenter.get(i) * HISTOGRAM_WIDTH, mPointList.get(i) * 1f, 6, Path.Direction.CCW);
             }
             canvas.drawPath(mBrokePointPath, mBrokeLinePaint);
             canvas.drawPath(linePath, linePaint);

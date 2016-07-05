@@ -25,6 +25,9 @@ public class StatisticsGridView extends BaseScrollerView {
     private LinearLayout mMonthdayParent;
     private BrokenLineView mBlackBrokenLine, mGreenBrokenLine, mRedBrokenLine;
 
+    private static final int HISTOGRAM_WIDTH = 50;
+
+
     private int mCurrentMonth = 7;
     private int mCurrentMonthDays = 31;
     private int mLeftMargin = 0;
@@ -90,11 +93,11 @@ public class StatisticsGridView extends BaseScrollerView {
         // 列
         int column = 0;
         for (int col = 0; col < mCurrentMonthDays * 2; col++) {
-            canvas.drawLine(column * 3f, 0f, column * 3f, getMeasuredHeight(), mPaint);
+            canvas.drawLine(column * 2f, 0f, column * 2f, getMeasuredHeight(), mPaint);
 
             drawHistogramView(position, col);
 
-            column += 15;
+            column += HISTOGRAM_WIDTH / 2;
             position = drawBrokeLine(position, col);
         }
     }
@@ -111,7 +114,7 @@ public class StatisticsGridView extends BaseScrollerView {
 
             LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT,
                     LinearLayout.LayoutParams.MATCH_PARENT);
-            params.width = 45;
+            params.width = HISTOGRAM_WIDTH;
             params.height = getMeasuredHeight();
             mHistogramLayout.addView(histogramView, params);
 
@@ -126,7 +129,7 @@ public class StatisticsGridView extends BaseScrollerView {
                     LinearLayout.LayoutParams.WRAP_CONTENT);
             View viewSpec = new View(mContext);
             TextView month = new TextView(mContext);
-            params.width = 45;
+            params.width = HISTOGRAM_WIDTH;
             params.gravity = Gravity.CENTER_HORIZONTAL;
             month.setTextSize(TypedValue.COMPLEX_UNIT_SP, 8);
             month.setText("7/" + (r / 2 == 0 ? 1 : r / 2 + 1));
