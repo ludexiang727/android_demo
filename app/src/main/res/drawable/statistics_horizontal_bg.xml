@@ -1,0 +1,16 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- bottom 边距为 17dp 因为在 statistics_layout.xml 中
+         滚动条的高度为 290dp 两边LinearLayout高度为273dp 所以 290-273=17dp
+    -->
+    <item android:bottom="17dp">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="rectangle">
+            <stroke
+                android:width="1px"
+                android:color="#fff" />
+            <solid android:color="#e3e3e3" />
+
+
+        </shape>
+    </item>
+</layer-list>

@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.graphics.RectF;
 import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.view.Gravity;
@@ -100,6 +101,7 @@ public class StatisticsGridView extends BaseScrollerView {
             column += HISTOGRAM_WIDTH / 2;
             position = drawBrokeLine(position, col);
         }
+
     }
 
     private int drawHistogramView(int position, int r) {
@@ -146,9 +148,9 @@ public class StatisticsGridView extends BaseScrollerView {
             HistogramModel model = mHistogramList.get(position);
             mBlackBrokenLine.setBrokeLinePoint(r, gridViewHeight - model.getBlackPoint());
 
-//            mGreenBrokenLine.setBrokeLinePoint(r, gridViewHeight - model.getGreenPoint());
+            mGreenBrokenLine.setBrokeLinePoint(r, gridViewHeight - model.getGreenPoint());
 //
-//            mRedBrokenLine.setBrokeLinePoint(r, gridViewHeight - model.getRedPoint());
+            mRedBrokenLine.setBrokeLinePoint(r, gridViewHeight - model.getRedPoint());
 
             position++;
         }

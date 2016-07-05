@@ -3,22 +3,78 @@
     android:layout_height="match_parent"
     android:background="#e3e3e3">
 
+    <LinearLayout
+        android:id="@+id/statistics_left_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="273dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="90dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="kmh" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="1000" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="1000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:text="1000" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/statistics_right_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="273dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="38dp"
+        android:layout_marginTop="90dp"
+        android:background="#f00"
+        android:orientation="vertical">
+
+    </LinearLayout>
 
     <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="290dp"
-        android:layout_marginLeft="38dp"
-        android:layout_marginRight="38dp"
         android:layout_marginTop="90dp"
-        android:background="#e3e3e3"
+        android:layout_toLeftOf="@id/statistics_right_layout"
+        android:layout_toRightOf="@id/statistics_left_layout"
+        android:background="@drawable/statistics_horizontal_bg"
         android:fillViewport="true"
+        android:overScrollMode="never"
         android:scrollbars="none">
 
         <demo.com.testdemo.widget.StatisticsView
             android:id="@+id/statistics_view"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent" />
 
     </HorizontalScrollView>
+
 
 </RelativeLayout>
