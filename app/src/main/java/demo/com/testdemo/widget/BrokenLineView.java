@@ -70,7 +70,7 @@ public class BrokenLineView extends BaseScrollerView {
         linePath.reset();
         if (mPointList != null && mPointList.size() > 0) {
             for (int i = 0; i < mPointList.size(); i++) {
-                Log.e("ldx", i + "  fuck onDraw.........." + CENTER_LEFT + " " + (mPointCenter.get(i) * HISTOGRAM_WIDTH) + " y :: " + (mPointList.get(i) * 1f));
+//                Log.e("ldx", i + "  fuck onDraw.........." + CENTER_LEFT + " " + (mPointCenter.get(i) * HISTOGRAM_WIDTH) + " y :: " + (mPointList.get(i) * 1f));
                 // 划线
                 if (i == 0) {
                     linePath.moveTo(CENTER_LEFT + mPointCenter.get(0) * HISTOGRAM_WIDTH, mPointList.get(0) * 1f);

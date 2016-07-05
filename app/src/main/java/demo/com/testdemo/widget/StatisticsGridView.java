@@ -6,6 +6,7 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.RectF;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.View;
@@ -104,10 +105,16 @@ public class StatisticsGridView extends BaseScrollerView {
 
     }
 
-    private int drawHistogramView(int position, int r) {
+    private int drawHistogramView(final int position, int r) {
         if (r % 2 == 0) {
             int gridViewHeight = getMeasuredHeight();
             HistogramView histogramView = new HistogramView(mContext);
+            histogramView.setOnClickListener(new OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Log.e("ldx", "aaaaaa position " + position);
+                }
+            });
 
             HistogramModel model = mHistogramList.get(position);
             histogramView.setHistogram(getMeasuredHeight(), gridViewHeight - model.getWhiteRectTop(),
