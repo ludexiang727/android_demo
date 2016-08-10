@@ -10,13 +10,31 @@
     tools:context="demo.com.testdemo.MainActivity">
 
     <TextView
+        android:id="@+id/text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!" />
 
     <Button
+        android:id="@+id/statistics"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="onStatistics"
-        android:text="Hello World!" />
+        android:text="统计表"
+        android:layout_below="@id/text"/>
+
+    <Button
+        android:id="@+id/mask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onMaskGuide"
+        android:text="蒙版"
+        android:layout_below="@id/statistics"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onUberLogin"
+        android:text="Uber"
+        android:layout_below="@id/mask"/>
 </RelativeLayout>

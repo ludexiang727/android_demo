@@ -1,0 +1,104 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mask_guide_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cc151515">
+
+    <demo.com.testdemo.widget.MaskGuideView
+        android:id="@+id/mask_guide_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- 帧动画 -->
+        <ImageView
+            android:id="@+id/mask_guide_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@null"
+            android:src="@drawable/loading_anim"
+            android:layout_toRightOf="@+id/mask_guide_line_path"
+            android:layout_toEndOf="@+id/mask_guide_line_path"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="-10dp"
+            android:visibility="visible"
+            android:scaleType="fitXY" />
+
+        <demo.com.testdemo.widget.MaskGuideCircleView
+            android:id="@+id/mask_guide_circle_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <demo.com.testdemo.widget.MaskGuideLinePath
+            android:id="@+id/mask_guide_line_path"
+            android:layout_width="100dp"
+            android:layout_height="180dp"/>
+
+        <!-- 首标题 -->
+        <TextView
+            android:id="@+id/mask_guide_welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="欢迎来到北京首都国际机场"
+            android:layout_marginTop="5dp"
+            android:textColor="#ff8903"
+            android:textSize="12sp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/mask_guide_line_path"
+            android:layout_toEndOf="@+id/mask_guide_line_path" />
+
+        <!-- 子标题 -->
+        <TextView
+            android:id="@+id/mask_guide_notify_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/mask_guide_welcome"
+            android:layout_below="@id/mask_guide_welcome"
+            android:layout_toRightOf="@id/mask_guide_icon"
+            android:text="机场环境复杂,推荐到这里上车\n可尽快让司机接到您"
+            android:textColor="#e3e3e3"
+            android:textSize="14sp" />
+
+        <!-- 隐藏按钮 -->
+        <TextView
+            android:id="@+id/mask_guide_i_know"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/mask_guide_welcome"
+            android:layout_below="@id/mask_guide_notify_tip"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/mask_guide_i_know_bg"
+            android:clickable="true"
+            android:text="我知道了"
+            android:textColor="#e3e3e3"
+            android:textSize="14sp" />
+
+        <!-- 蒙版定位form -->
+        <TextView
+            android:id="@+id/mask_guide_start_adr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/car_bg_departure_guide"
+            android:clickable="true"
+            android:drawableLeft="@drawable/car_formcard_icon_startpoint"
+            android:drawablePadding="7dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="T3航站楼-一层-5号门"
+            android:textColor="#99000000"
+            android:textSize="14dp"
+            android:visibility="visible"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/mask_guide_line_path" />
+
+    </demo.com.testdemo.widget.MaskGuideView>
+
+</RelativeLayout>
+
+
