@@ -8,6 +8,7 @@ import android.view.View;
 import demo.com.testdemo.activity.MaskGuideActivity;
 import demo.com.testdemo.activity.StatisticsActivity;
 import demo.com.testdemo.activity.UberLoginActivity;
+import demo.com.testdemo.activity.UberWaitForActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,6 +30,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void onUberLogin(View v) {
         Intent intent = new Intent(this, UberLoginActivity.class);
+        startActivity(intent);
+    }
+
+    public void onUberWait(View v) {
+        Intent intent = new Intent(this, UberWaitForActivity.class);
         startActivity(intent);
     }
 }

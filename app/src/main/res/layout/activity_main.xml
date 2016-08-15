@@ -32,9 +32,17 @@
         android:layout_below="@id/statistics"/>
 
     <Button
+        android:id="@+id/uber_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="onUberLogin"
         android:text="Uber"
         android:layout_below="@id/mask"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onUberWait"
+        android:text="wait"
+        android:layout_below="@id/uber_login"/>
 </RelativeLayout>

@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:background="#f33">
 
-    <demo.com.testdemo.widget.uber.BackgroundCircle
+    <demo.com.testdemo.widget.uber.login.BackgroundCircle
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 

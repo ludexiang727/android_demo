@@ -3,4 +3,10 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <array name="wait_for_progress_color_schema">
+        <item name="color_white">#fff</item>
+        <item name="color_blue">#3f51b6</item>
+        <item name="color_accent">#ff4081</item>
+    </array>
 </resources>

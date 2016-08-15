@@ -1,0 +1,65 @@
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- title -->
+    <TextView
+        android:id="@+id/wait_for_response_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:text="正在叫车"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:background="@android:color/black"/>
+
+    <!-- progress -->
+    <demo.com.testdemo.widget.uber.wait.WaitForResponseProgress
+        android:id="@+id/wait_for_response_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:progress_oneshot="false"
+        app:progress_height="3dp"
+        app:progress_top="42dp"/>
+
+    <demo.com.testdemo.widget.uber.wait.WaitForResponseMaskGuideView
+        android:id="@+id/wait_for_response_mask_guide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/wait_for_response_title_bar"
+        android:visibility="gone"
+        android:background="#90000033"/>
+
+    <demo.com.testdemo.widget.uber.wait.WaitForResponseCancelOrderView
+        android:id="@+id/wait_for_response_path_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="-10dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/wait_for_response_cancel_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/wait_for_response_cancel_order"
+        android:gravity="center_horizontal"/>
+
+    <ImageView
+        android:id="@+id/wait_for_response_cancel_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:adjustViewBounds="true"
+        android:src="@drawable/wait_for_response_cancel_selector"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="30dp"
+        android:contentDescription="@null"/>
+</merge>

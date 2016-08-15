@@ -3,4 +3,12 @@
     <declare-styleable name="BrokenLineView">
         <attr name="broken_line_color" format="color"/>
     </declare-styleable>
+
+
+    <declare-styleable name="WaitForResponseProgress">
+        <attr name="progress_color_schema" format="reference"/>
+        <attr name="progress_oneshot" format="boolean"/>
+        <attr name="progress_height" format="dimension"/>
+        <attr name="progress_top" format="dimension"/>
+    </declare-styleable>
 </resources>
