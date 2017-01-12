@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import demo.com.testdemo.activity.CircleProActivity;
 import demo.com.testdemo.activity.GuessUGoActivity;
 import demo.com.testdemo.activity.MaskGuideActivity;
 import demo.com.testdemo.activity.PopupActivity;
@@ -53,6 +54,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void onPopup(View v) {
         Intent intent = new Intent(this, PopupActivity.class);
+        startActivity(intent);
+    }
+
+    public void onDownLoadPro(View v) {
+        Intent intent = new Intent(this, CircleProActivity.class);
         startActivity(intent);
     }
 }
