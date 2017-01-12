@@ -1,9 +1,12 @@
 package demo.com.testdemo.widget.uber.wait;
 
+import android.animation.Animator;
+import android.animation.AnimatorSet;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.animation.LinearInterpolator;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -14,14 +17,16 @@ import demo.com.testdemo.R;
  * Created by ludexiang on 16/8/10.
  */
 public class WaitForResponseView extends RelativeLayout implements View.OnLongClickListener,
-        WaitForResponseCancelOrderView.ICancelOrderLocation {
+        /*WaitForResponseCancelOrderView.ICancelOrderLocation*/ WaitResponseCancelView.ICancelOrderLocation {
 
     private TextView mTitleBar;
     private WaitForResponseProgress mWaitResponseProgress;
     private WaitForResponseMaskGuideView mWaitResponseMaskGuide;
     private TextView mCancelInfo;
     private ImageView mWaitResponseCancelOrder;
-    private WaitForResponseCancelOrderView mCancelOrderPathView;
+//    private WaitForResponseCircleView mCancelCircleView;
+//    private WaitForResponseCancelOrderView mCancelOrderPathView;
+    private WaitResponseCancelView mCancelOrderView;
 
     private boolean isLoading;
 
@@ -45,10 +50,13 @@ public class WaitForResponseView extends RelativeLayout implements View.OnLongCl
         mWaitResponseProgress = (WaitForResponseProgress) view.findViewById(R.id.wait_for_response_progress);
         mWaitResponseMaskGuide = (WaitForResponseMaskGuideView) view.findViewById(R.id.wait_for_response_mask_guide);
         mWaitResponseCancelOrder = (ImageView) view.findViewById(R.id.wait_for_response_cancel_order);
-        mCancelOrderPathView = (WaitForResponseCancelOrderView) view.findViewById(R.id.wait_for_response_path_view);
+//        mCancelCircleView = (WaitForResponseCircleView) view.findViewById(R.id.wait_for_response_circle_view);
+        mCancelOrderView = (WaitResponseCancelView) view.findViewById(R.id.wait_for_response_path_view);
+//        mCancelOrderPathView = (WaitForResponseCancelOrderView) view.findViewById(R.id.wait_for_response_path_view);
         mCancelInfo = (TextView) view.findViewById(R.id.wait_for_response_cancel_info);
 
-        mCancelOrderPathView.setLocationListener(this);
+//        mCancelOrderPathView.setLocationListener(this);
+        mCancelOrderView.setLocationListener(this);
         mWaitResponseCancelOrder.setOnLongClickListener(this);
     }
 
@@ -72,8 +80,17 @@ public class WaitForResponseView extends RelativeLayout implements View.OnLongCl
     public boolean onLongClick(View v) {
         if (v.getId() == R.id.wait_for_response_cancel_order) {
             updateTitle();
-            mCancelOrderPathView.setVisibility(View.VISIBLE);
-            mCancelOrderPathView.updatePathAnim();
+//            mCancelCircleView.setVisibility(View.VISIBLE);
+//            mCancelOrderPathView.setVisibility(View.VISIBLE);
+//            Animator scale = mCancelCircleView.scaleAnim();
+//            Animator rect = mCancelOrderPathView.updatePathAnim();
+            mCancelOrderView.setVisibility(View.VISIBLE);
+            mCancelOrderView.updatePathAnim();
+//            AnimatorSet set = new AnimatorSet();
+//            set.playTogether(scale, rect);
+//            set.setInterpolator(new LinearInterpolator());
+//            set.setDuration(500);
+//            set.start();
         }
         return false;
     }

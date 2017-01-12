@@ -9,4 +9,7 @@
         <item name="color_blue">#3f51b6</item>
         <item name="color_accent">#ff4081</item>
     </array>
+
+    <drawable name="travel_list_pressed">#e3e3e3</drawable>
+    <drawable name="travel_list_normal">#00000000</drawable>
 </resources>

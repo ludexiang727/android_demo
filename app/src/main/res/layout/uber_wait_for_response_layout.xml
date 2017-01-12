@@ -33,12 +33,18 @@
         android:visibility="gone"
         android:background="#90000033"/>
 
-    <demo.com.testdemo.widget.uber.wait.WaitForResponseCancelOrderView
+    <demo.com.testdemo.widget.uber.wait.WaitResponseCancelView
+        android:id="@+id/wait_for_response_path_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <!--<demo.com.testdemo.widget.uber.wait.WaitForResponseCancelOrderView
         android:id="@+id/wait_for_response_path_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="-10dp"
-        android:visibility="gone"/>
+        android:visibility="gone"/>-->
 
     <TextView
         android:id="@+id/wait_for_response_cancel_info"

@@ -1,0 +1,32 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="90dp"
+    android:background="#6e707c">
+
+    <TextView
+        android:id="@+id/go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="去:"/>
+
+    <TextView
+        android:id="@+id/suggest_address"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/go"
+        android:singleLine="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_vertical"
+        android:drawablePadding="10dp"
+        android:drawableRight="@drawable/car_icon_edittext_clean_normal"
+        android:ellipsize="end"
+        android:text="首都国际机场T3航站楼"/>
+</RelativeLayout>

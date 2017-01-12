@@ -1,0 +1,14 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--<include-->
+        <!--layout="@layout/"/>-->
+
+    <demo.com.testdemo.widget.uber.mytravel.view.custom.TravelListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@drawable/travel_list_selector"/>
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/guess_u_go_bg">
+
+        <TextView
+            android:id="@+id/start_adr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="灵境胡同"
+            android:padding="15dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#e3e3e3"/>
+
+        <TextView
+            android:id="@+id/end_adr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="输入您的目的地"
+            android:padding="15dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

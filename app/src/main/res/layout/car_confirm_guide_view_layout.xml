@@ -1,0 +1,13 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#000">
+    <TextView
+        android:id="@+id/car_confirm_view_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:padding="10dp"
+        android:text="点击返回键进行回到首页"/>
+</RelativeLayout>

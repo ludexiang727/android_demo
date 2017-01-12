@@ -40,9 +40,34 @@
         android:layout_below="@id/mask"/>
 
     <Button
+        android:id="@+id/uber_wait"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="onUberWait"
         android:text="wait"
         android:layout_below="@id/uber_login"/>
+
+    <Button
+        android:id="@+id/uber_my_travel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onUberTravel"
+        android:text="my travel"
+        android:layout_below="@id/uber_wait"/>
+
+    <Button
+        android:id="@+id/guess_you_go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onGuessUGo"
+        android:text="guess U go"
+        android:layout_below="@id/uber_my_travel"/>
+
+    <Button
+        android:id="@+id/popup_window"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onPopup"
+        android:text="showPopUp"
+        android:layout_below="@id/guess_you_go"/>
 </RelativeLayout>
