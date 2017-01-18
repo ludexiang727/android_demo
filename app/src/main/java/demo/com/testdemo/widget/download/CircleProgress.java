@@ -77,7 +77,7 @@ public class CircleProgress extends View {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
-        // 挖空圆
+        // 挖空圆 必须用这个创建layer
         int layerCount = canvas.saveLayer(mRoundRectF, null, Canvas.MATRIX_SAVE_FLAG
                 | Canvas.CLIP_SAVE_FLAG
                 | Canvas.HAS_ALPHA_LAYER_SAVE_FLAG
@@ -109,7 +109,7 @@ public class CircleProgress extends View {
             public void run() {
                 while (swpe != 0) {
                     try {
-                        Thread.sleep(2000);
+                        Thread.sleep(500);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
