@@ -184,10 +184,13 @@ public class BoldTextView extends android.support.v7.widget.AppCompatTextView {
         }
     }
 
-    AnimatorSet up;
+    private boolean isStarting = false;
+//    AnimatorSet up;
     private void upAnim() {
-        if (up == null) {
-            up = new AnimatorSet();
+//        if (up == null) {
+        if (!isStarting) {
+            isStarting = true;
+            AnimatorSet up = new AnimatorSet();
             ValueAnimator curMoveAnim = curMoveAnim(mMarginTop + mBoldHeight, mMarginTop);
             ValueAnimator lastMoveAnim = lastMoveAnim(mMarginTop, 0);
 
@@ -199,10 +202,12 @@ public class BoldTextView extends android.support.v7.widget.AppCompatTextView {
                 public void onAnimationEnd(Animator animation) {
                     super.onAnimationEnd(animation);
                     mLastBold = mBoldStr;
-                    up = null;
+//                    up = null;
+                    isStarting = false;
                 }
             });
             up.start();
+//        }
         }
     }
 
