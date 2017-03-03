@@ -58,7 +58,7 @@ public class LockScreenActivity extends Activity {
 
         distance = (BoldTextView) findViewById(R.id.lock_distance);
         minute = (BoldTextView) findViewById(R.id.lock_time);
-
+        distance.setVisibility(View.GONE);
         testDemo();
 
     }
@@ -77,6 +77,7 @@ public class LockScreenActivity extends Activity {
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
+
 
                     distance.setTextStr("" + (count - random.nextFloat()), "公里");
                     minute.setTextStr("" + count, "分钟");

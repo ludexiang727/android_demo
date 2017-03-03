@@ -14,10 +14,11 @@ import android.graphics.RectF;
 import android.support.annotation.NonNull;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
+import android.view.animation.AccelerateDecelerateInterpolator;
 import android.view.animation.AccelerateInterpolator;
-import android.view.animation.LinearInterpolator;
 
 import demo.com.testdemo.R;
+
 
 /**
  * Created by ludexiang on 2017/2/21.
@@ -34,6 +35,9 @@ public class BoldTextView extends android.support.v7.widget.AppCompatTextView {
     private int mBSize;
     private int mNColor;
     private int mNSize;
+    /**
+     * canvas.drawText 中参数 (x,y)是设置文案在什么位置画的中心点，故没用
+     */
     private int mMarginLeft;
     private int mMarginTop;
     private boolean isHorCenter, isBBold, isNBold;
@@ -50,6 +54,9 @@ public class BoldTextView extends android.support.v7.widget.AppCompatTextView {
 
     private RectF mRectF;
     private Paint mRectPaint;
+
+    private boolean isStarting;
+    private boolean isDrawRect;
 
     public BoldTextView(Context context) {
         this(context, null);
@@ -79,6 +86,7 @@ public class BoldTextView extends android.support.v7.widget.AppCompatTextView {
         mMarginLeft = array.getDimensionPixelOffset(R.styleable.BoldTextView_b_bold_x, 0);
         mMarginTop = array.getDimensionPixelOffset(R.styleable.BoldTextView_b_bold_y, 0);
         mPaddingTop = array.getDimensionPixelOffset(R.styleable.BoldTextView_n_padding_top, 0);
+        isDrawRect = array.getBoolean(R.styleable.BoldTextView_draw_rect, false);
         array.recycle();
 
         mStrPaint = new Paint();
@@ -117,14 +125,13 @@ public class BoldTextView extends android.support.v7.widget.AppCompatTextView {
         mStrPaint.setFakeBoldText(isBBold);
         mStrPaint.setTextScaleX(mBXScale);
         mStrPaint.getTextBounds(mBoldStr, 0, mBoldStr.length(), rect);
-        float bWidth = rect.width() ;
         Paint.FontMetrics metrics = mStrPaint.getFontMetrics();
         mBoldHeight = rect.height();
 
         mRectF = new RectF(0, mBoldHeight, getWidth(), mMarginTop + mBoldHeight);
         drawBold(canvas);
         drawRect(canvas);
-        drawNormal(canvas, bWidth, metrics);
+        drawNormal(canvas, metrics);
     }
 
     /**
@@ -134,22 +141,15 @@ public class BoldTextView extends android.support.v7.widget.AppCompatTextView {
     private void drawBold(Canvas canvas) {
         // drawText 中的x , y 坐标是设置文案在什么位置显示的中心点而不是从(x,y)开始画
         int count = canvas.save();
+        int left = isHorCenter ? mScreenWidth / 2 : getMeasuredWidth() / 2;
         if (!mBoldStr.equals(mLastBold)) {
             upAnim();
-            if (isHorCenter) {
-                canvas.drawText(mBoldStr, mScreenWidth / 2, mMarginTop, mStrPaint);
-            } else {
-                if (mLastBold != null) {
-                    canvas.drawText(mLastBold, mMarginLeft, mLastMoveTop, mStrPaint);
-                }
-                canvas.drawText(mBoldStr, mMarginLeft, mCurMoveTop, mStrPaint);
+            if (mLastBold != null) {
+                canvas.drawText(mLastBold, left, mLastMoveTop, mStrPaint);
             }
+            canvas.drawText(mBoldStr, left, mCurMoveTop, mStrPaint);
         } else {
-            if (isHorCenter) {
-                canvas.drawText(mBoldStr, mScreenWidth / 2, mMarginTop, mStrPaint);
-            } else {
-                canvas.drawText(mBoldStr, mMarginLeft, mMarginTop, mStrPaint);
-            }
+            canvas.drawText(mBoldStr, left, mMarginTop, mStrPaint);
         }
         canvas.restoreToCount(count);
     }
@@ -158,56 +158,55 @@ public class BoldTextView extends android.support.v7.widget.AppCompatTextView {
      * 画白色背景
      **/
     private void drawRect(Canvas canvas) {
-        canvas.drawRect(mRectF, mRectPaint);
+        if (isDrawRect) {
+            canvas.drawRect(mRectF, mRectPaint);
+        }
     }
 
     /**
      * 画普通字体
      * @param canvas
-     * @param bWidth
      * @param metrics
      */
-    private void drawNormal(Canvas canvas, float bWidth, Paint.FontMetrics metrics) {
+    private void drawNormal(Canvas canvas, Paint.FontMetrics metrics) {
         if (mNormalStr != null && !"".equals(mNormalStr)) {
             mStrPaint.setColor(mNColor);
             mStrPaint.setTextSize(mNSize);
             mStrPaint.setFakeBoldText(isNBold);
             mStrPaint.setTextAlign(Paint.Align.CENTER);
             mStrPaint.setTextScaleX(mNXScale);
-            float nWidth = mStrPaint.measureText(mNormalStr);
+            int left = isHorCenter ? mScreenWidth / 2 : getMeasuredWidth() / 2;
             if (isHorCenter) {
-                canvas.drawText(mNormalStr, mScreenWidth / 2, metrics.bottom * 5 + mMarginTop + mPaddingTop, mStrPaint);
+                canvas.drawText(mNormalStr, left, metrics.bottom * 5 + mMarginTop + mPaddingTop, mStrPaint);
             } else {
-                canvas.drawText(mNormalStr, mMarginLeft + Math.abs((bWidth - nWidth)) / 10,
+                canvas.drawText(mNormalStr, left,
                         metrics.bottom * 1.5f + mMarginTop + mPaddingTop, mStrPaint);
             }
         }
     }
 
-    private boolean isStarting = false;
-//    AnimatorSet up;
+    /**
+     * 上滑动画
+     */
     private void upAnim() {
-//        if (up == null) {
         if (!isStarting) {
             isStarting = true;
-            AnimatorSet up = new AnimatorSet();
+            AnimatorSet moveAnimator = new AnimatorSet();
             ValueAnimator curMoveAnim = curMoveAnim(mMarginTop + mBoldHeight, mMarginTop);
             ValueAnimator lastMoveAnim = lastMoveAnim(mMarginTop, 0);
 
-            up.setDuration(500);
-            up.setInterpolator(new AccelerateInterpolator());
-            up.playTogether(curMoveAnim, lastMoveAnim);
-            up.addListener(new AnimatorListenerAdapter() {
+            moveAnimator.setDuration(500);
+            moveAnimator.setInterpolator(new AccelerateDecelerateInterpolator());
+            moveAnimator.playTogether(curMoveAnim, lastMoveAnim);
+            moveAnimator.addListener(new AnimatorListenerAdapter() {
                 @Override
                 public void onAnimationEnd(Animator animation) {
                     super.onAnimationEnd(animation);
                     mLastBold = mBoldStr;
-//                    up = null;
                     isStarting = false;
                 }
             });
-            up.start();
-//        }
+            moveAnimator.start();
         }
     }
 

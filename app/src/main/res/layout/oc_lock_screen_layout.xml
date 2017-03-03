@@ -29,6 +29,7 @@
             bold:b_bold_y="57dp"
             bold:b_color="#333333"
             bold:b_size="75sp"
+            bold:draw_rect="true"
             bold:n_color="#666666"
             bold:n_size="16sp"
             bold:b_x_scale="0.5"
@@ -45,6 +46,7 @@
             bold:b_color="#333333"
             bold:b_size="75sp"
             bold:b_x_scale="0.5"
+            bold:draw_rect="true"
             bold:n_color="#666666"
             bold:n_size="16sp"
             bold:n_padding_top="-6dp"/>
