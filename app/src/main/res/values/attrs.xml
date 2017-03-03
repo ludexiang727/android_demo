@@ -11,4 +11,19 @@
         <attr name="progress_height" format="dimension"/>
         <attr name="progress_top" format="dimension"/>
     </declare-styleable>
+
+    <declare-styleable name="BoldTextView">
+        <attr name="b_color" format="color"/>
+        <attr name="b_size" format="dimension"/>
+        <attr name="b_bold" format="boolean"/>
+        <attr name="n_color" format="color"/>
+        <attr name="n_size" format="dimension"/>
+        <attr name="n_bold" format="boolean"/>
+        <attr name="n_padding_top" format="dimension"/>
+        <attr name="b_bold_x" format="dimension"/>
+        <attr name="b_bold_y" format="dimension"/>
+        <attr name="hor_center" format="boolean"/>
+        <attr name="b_x_scale" format="float"/>
+        <attr name="n_x_scale" format="float"/>
+    </declare-styleable>
 </resources>

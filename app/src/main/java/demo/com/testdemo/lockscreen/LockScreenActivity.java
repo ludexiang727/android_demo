@@ -7,7 +7,10 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
+import java.util.Random;
+
 import demo.com.testdemo.R;
+import demo.com.testdemo.lockscreen.widget.BoldTextView;
 
 import static android.view.WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD;
 import static android.view.WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED;
@@ -18,6 +21,9 @@ import static android.view.WindowManager.LayoutParams.FLAG_TURN_SCREEN_ON;
  */
 
 public class LockScreenActivity extends Activity {
+
+    private BoldTextView distance;
+    private BoldTextView minute;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,9 +56,38 @@ public class LockScreenActivity extends Activity {
 
         setContentView(R.layout.oc_lock_screen_layout);
 
+        distance = (BoldTextView) findViewById(R.id.lock_distance);
+        minute = (BoldTextView) findViewById(R.id.lock_time);
+
+        testDemo();
+
     }
 
-    public void onClose(View v) {
-        finish();
+
+    private void testDemo() {
+        final Random random = new Random(1);
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                int count = 20;
+                while (count > 1) {
+                    try {
+                        Thread.sleep(10000);
+
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+
+                    distance.setTextStr("" + (count - random.nextFloat()), "公里");
+                    minute.setTextStr("" + count, "分钟");
+
+                    count--;
+
+                    distance.postInvalidate();
+                    minute.postInvalidate();
+                }
+            }
+        }).start();
     }
+
 }

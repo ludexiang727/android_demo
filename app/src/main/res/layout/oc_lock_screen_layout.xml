@@ -1,18 +1,54 @@
-<RelativeLayout
+<demo.com.testdemo.lockscreen.widget.LockScreenRootViewGroup
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bold="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#ffffff">
 
     <TextView
+        android:id="@+id/test"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="lock  screen"/>
+        android:layout_height="90dp"
+        android:layout_marginBottom="90dp"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="onClose"
-        android:layout_centerInParent="true"
-        android:text="finish"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@id/test"
+        android:orientation="horizontal">
 
-</RelativeLayout>
+        <demo.com.testdemo.lockscreen.widget.BoldTextView
+            android:id="@+id/lock_distance"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            bold:b_bold="true"
+            bold:b_bold_x="80dp"
+            bold:b_bold_y="57dp"
+            bold:b_color="#333333"
+            bold:b_size="75sp"
+            bold:n_color="#666666"
+            bold:n_size="16sp"
+            bold:b_x_scale="0.5"
+            bold:n_padding_top="-6dp"/>
+
+        <demo.com.testdemo.lockscreen.widget.BoldTextView
+            android:id="@+id/lock_time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            bold:b_bold="true"
+            bold:b_bold_x="80dp"
+            bold:b_bold_y="57dp"
+            bold:b_color="#333333"
+            bold:b_size="75sp"
+            bold:b_x_scale="0.5"
+            bold:n_color="#666666"
+            bold:n_size="16sp"
+            bold:n_padding_top="-6dp"/>
+
+    </LinearLayout>
+
+</demo.com.testdemo.lockscreen.widget.LockScreenRootViewGroup>
