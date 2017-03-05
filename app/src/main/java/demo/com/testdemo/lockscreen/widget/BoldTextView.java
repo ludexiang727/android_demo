@@ -195,7 +195,7 @@ public class BoldTextView extends android.support.v7.widget.AppCompatTextView {
             ValueAnimator curMoveAnim = curMoveAnim(mMarginTop + mBoldHeight, mMarginTop);
             ValueAnimator lastMoveAnim = lastMoveAnim(mMarginTop, 0);
 
-            moveAnimator.setDuration(500);
+            moveAnimator.setDuration(300);
             moveAnimator.setInterpolator(new AccelerateDecelerateInterpolator());
             moveAnimator.playTogether(curMoveAnim, lastMoveAnim);
             moveAnimator.addListener(new AnimatorListenerAdapter() {
