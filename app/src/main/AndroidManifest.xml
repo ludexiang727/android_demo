@@ -39,7 +39,6 @@
 
         <activity android:name=".activity.CircleProActivity"
             android:screenOrientation="portrait"/>
-
     </application>
 
 </manifest>
