@@ -39,18 +39,14 @@
 
         <activity android:name=".activity.CircleProActivity"
             android:screenOrientation="portrait"/>
-<<<<<<< HEAD
 
-        <activity android:name=".activity.IocViewActivity"
-            android:screenOrientation="portrait"/>
+        <!--<activity android:name=".activity.IocViewActivity"
+            android:screenOrientation="portrait"/>-->
 
         <activity android:name=".lockscreen.LockScreenActivity"
             android:excludeFromRecents="true"
             android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
             android:screenOrientation="portrait"/>
-
-=======
->>>>>>> parent of 268d107... 穿透锁屏探索
     </application>
 
 </manifest>
