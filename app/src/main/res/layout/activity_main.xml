@@ -79,22 +79,4 @@
         android:onClick="onDownLoadPro"
         android:layout_alignBaseline="@id/statistics"
         android:layout_toRightOf="@id/statistics"/>
-
-    <Button
-        android:id="@+id/ioc_view_button"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:text="iocView"
-        android:layout_toRightOf="@id/statistics"
-        android:layout_below="@id/circle_progress"
-        android:onClick="onIocView"/>
-
-    <Button
-        android:id="@+id/ioc_lock_screen"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:text="lockScreen"
-        android:layout_toRightOf="@id/statistics"
-        android:layout_below="@id/ioc_view_button"
-        android:onClick="onLockScreen"/>
 </RelativeLayout>
