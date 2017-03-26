@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="demo.com.testdemo">
 
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -38,6 +41,12 @@
             android:screenOrientation="portrait"/>
 
         <activity android:name=".activity.CircleProActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.LockScreenActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.TestActivity"
             android:screenOrientation="portrait"/>
     </application>
 

@@ -7,9 +7,11 @@ import android.view.View;
 
 import demo.com.testdemo.activity.CircleProActivity;
 import demo.com.testdemo.activity.GuessUGoActivity;
+import demo.com.testdemo.activity.LockScreenActivity;
 import demo.com.testdemo.activity.MaskGuideActivity;
 import demo.com.testdemo.activity.PopupActivity;
 import demo.com.testdemo.activity.StatisticsActivity;
+import demo.com.testdemo.activity.TestActivity;
 import demo.com.testdemo.activity.UberLoginActivity;
 import demo.com.testdemo.activity.UberWaitForActivity;
 import demo.com.testdemo.widget.uber.mytravel.MyTravelActivity;
@@ -61,4 +63,15 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, CircleProActivity.class);
         startActivity(intent);
     }
+
+    public void onBold(View v) {
+        Intent intent = new Intent(this, LockScreenActivity.class);
+        startActivity(intent);
+    }
+
+    public void onTest(View v) {
+        Intent intent = new Intent(this, TestActivity.class);
+        startActivity(intent);
+    }
+
 }

@@ -1,0 +1,57 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <demo.com.testdemo.lockscreen.widget.BoldTextView
+        xmlns:bold="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/lock_driver_info"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_horizontal"
+        bold:b_bold="false"
+        bold:b_bold_y="40dp"
+        bold:b_color="#333333"
+        bold:b_size="24sp"
+        bold:hor_center="true"
+        bold:is_anim="false"
+        bold:n_bold="true"
+        bold:n_color="#333333"
+        bold:n_padding_top="35dp"
+        bold:n_size="60sp"
+        bold:n_x_scale="0.8" />
+
+    <LinearLayout
+        android:layout_below="@id/lock_driver_info"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="-15dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:gravity="center_vertical"
+            android:id="@+id/lock_screen_city"
+            android:layout_alignTop="@+id/lock_screen_car_number"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="#333333"
+            android:textScaleX="0.8"
+            android:textSize="47sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:gravity="center_vertical"
+            android:id="@+id/lock_screen_car_number"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="#333333"
+            android:textScaleX="0.8"
+            android:textSize="60sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>

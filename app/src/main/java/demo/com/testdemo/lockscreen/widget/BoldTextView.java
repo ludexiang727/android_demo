@@ -12,19 +12,19 @@ import android.graphics.Paint;
 import android.graphics.Rect;
 import android.graphics.RectF;
 import android.support.annotation.NonNull;
+import android.text.SpannableString;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
 import android.view.animation.AccelerateDecelerateInterpolator;
-import android.view.animation.AccelerateInterpolator;
+import android.widget.TextView;
 
 import demo.com.testdemo.R;
-
 
 /**
  * Created by ludexiang on 2017/2/21.
  */
 
-public class BoldTextView extends android.support.v7.widget.AppCompatTextView {
+public final class BoldTextView extends TextView {
 
     private String mBoldStr;
     private String mNormalStr;
@@ -35,9 +35,6 @@ public class BoldTextView extends android.support.v7.widget.AppCompatTextView {
     private int mBSize;
     private int mNColor;
     private int mNSize;
-    /**
-     * canvas.drawText 中参数 (x,y)是设置文案在什么位置画的中心点，故没用
-     */
     private int mMarginLeft;
     private int mMarginTop;
     private boolean isHorCenter, isBBold, isNBold;
@@ -57,6 +54,9 @@ public class BoldTextView extends android.support.v7.widget.AppCompatTextView {
 
     private boolean isStarting;
     private boolean isDrawRect;
+    private boolean isLoadAnim;
+    private boolean isSpanString;
+    private SpannableString mSpan;
 
     public BoldTextView(Context context) {
         this(context, null);
@@ -87,6 +87,7 @@ public class BoldTextView extends android.support.v7.widget.AppCompatTextView {
         mMarginTop = array.getDimensionPixelOffset(R.styleable.BoldTextView_b_bold_y, 0);
         mPaddingTop = array.getDimensionPixelOffset(R.styleable.BoldTextView_n_padding_top, 0);
         isDrawRect = array.getBoolean(R.styleable.BoldTextView_draw_rect, false);
+        isLoadAnim = array.getBoolean(R.styleable.BoldTextView_is_anim, false);
         array.recycle();
 
         mStrPaint = new Paint();
@@ -116,9 +117,7 @@ public class BoldTextView extends android.support.v7.widget.AppCompatTextView {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        if (mBoldStr == null || "".equals(mBoldStr)) {
-            return;
-        }
+
         Rect rect = new Rect();
         mStrPaint.setColor(mBColor);
         mStrPaint.setTextSize(mBSize);
@@ -144,10 +143,10 @@ public class BoldTextView extends android.support.v7.widget.AppCompatTextView {
         int left = isHorCenter ? mScreenWidth / 2 : getMeasuredWidth() / 2;
         if (!mBoldStr.equals(mLastBold)) {
             upAnim();
-            if (mLastBold != null) {
-                canvas.drawText(mLastBold, left, mLastMoveTop, mStrPaint);
+            if (mLastBold != null && !"".equals(mLastBold)) {
+                canvas.drawText(mLastBold, left, isLoadAnim ? mLastMoveTop : mMarginTop, mStrPaint);
             }
-            canvas.drawText(mBoldStr, left, mCurMoveTop, mStrPaint);
+            canvas.drawText(mBoldStr, left, isLoadAnim ? mCurMoveTop : mMarginTop, mStrPaint);
         } else {
             canvas.drawText(mBoldStr, left, mMarginTop, mStrPaint);
         }
@@ -163,6 +162,11 @@ public class BoldTextView extends android.support.v7.widget.AppCompatTextView {
         }
     }
 
+    public void setSpanString(boolean span, @NonNull SpannableString spanStr) {
+        isSpanString = span;
+        mSpan = spanStr;
+    }
+
     /**
      * 画普通字体
      * @param canvas
@@ -170,12 +174,18 @@ public class BoldTextView extends android.support.v7.widget.AppCompatTextView {
      */
     private void drawNormal(Canvas canvas, Paint.FontMetrics metrics) {
         if (mNormalStr != null && !"".equals(mNormalStr)) {
+            int left = isHorCenter ? mScreenWidth / 2 : getMeasuredWidth() / 2;
             mStrPaint.setColor(mNColor);
-            mStrPaint.setTextSize(mNSize);
             mStrPaint.setFakeBoldText(isNBold);
+            mStrPaint.setTextSize(mNSize);
+            if (isSpanString) {
+//                canvas.drawText(mSpan, 0, mNormalStr.length(), left, metrics.bottom * 5 + mMarginTop + mPaddingTop, mStrPaint);
+                setText(mSpan);
+                return;
+            }
+
             mStrPaint.setTextAlign(Paint.Align.CENTER);
             mStrPaint.setTextScaleX(mNXScale);
-            int left = isHorCenter ? mScreenWidth / 2 : getMeasuredWidth() / 2;
             if (isHorCenter) {
                 canvas.drawText(mNormalStr, left, metrics.bottom * 5 + mMarginTop + mPaddingTop, mStrPaint);
             } else {
@@ -189,7 +199,7 @@ public class BoldTextView extends android.support.v7.widget.AppCompatTextView {
      * 上滑动画
      */
     private void upAnim() {
-        if (!isStarting) {
+        if (!isStarting && isLoadAnim) {
             isStarting = true;
             AnimatorSet moveAnimator = new AnimatorSet();
             ValueAnimator curMoveAnim = curMoveAnim(mMarginTop + mBoldHeight, mMarginTop);

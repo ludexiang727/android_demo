@@ -26,5 +26,6 @@
         <attr name="b_x_scale" format="float"/>
         <attr name="n_x_scale" format="float"/>
         <attr name="draw_rect" format="boolean"/>
+        <attr name="is_anim" format="boolean"/>
     </declare-styleable>
 </resources>

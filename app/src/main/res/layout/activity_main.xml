@@ -79,4 +79,22 @@
         android:onClick="onDownLoadPro"
         android:layout_alignBaseline="@id/statistics"
         android:layout_toRightOf="@id/statistics"/>
+
+    <Button
+        android:id="@+id/bold_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="bold text"
+        android:layout_below="@id/circle_progress"
+        android:onClick="onBold"
+        android:layout_toRightOf="@id/statistics"/>
+
+    <Button
+        android:id="@+id/test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test text"
+        android:layout_below="@id/bold_text"
+        android:onClick="onTest"
+        android:layout_toRightOf="@id/statistics"/>
 </RelativeLayout>
