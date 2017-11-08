@@ -3,6 +3,7 @@ package demo.com.testdemo.activity;
 import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.text.SpannableString;
 import android.text.Spanned;
@@ -31,16 +32,50 @@ public class LockScreenActivity extends Activity {
         textView = (BoldTextView) findViewById(R.id.lock_driver_info);
         city = (TextView) findViewById(R.id.lock_screen_city);
         Carnumber = (TextView) findViewById(R.id.lock_screen_car_number);
+
+        String str = "京I78903";
+        String number = addPoint(str);
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                for (int i = 0 ; i < 20 ; i++) {
+                    textView.setTextStr("" + i, "公里");
+                    textView.postInvalidate();
+                    try {
+                        Thread.sleep(5000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        }).start();
+
+//        city.setText(number.substring(0, 1));
+//        Carnumber.setText(number.substring(1, number.length()));
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        String str = "京I78903";
-        String number = addPoint(str);
-        textView.setTextStr("银色·这是test", "");
-        city.setText(number.substring(0, 1));
-        Carnumber.setText(number.substring(1, number.length()));
+//        String str = "京I78903";
+//        String number = addPoint(str);
+//        new Handler(getMainLooper()).postDelayed(new Runnable() {
+//            @Override
+//            public void run() {
+//                for (int i = 0 ; i < 20 ; i++) {
+//                    try {
+//                        Thread.sleep(2000);
+//                    } catch (InterruptedException e) {
+//                        e.printStackTrace();
+//                    }
+//                    textView.setTextStr("" + i, "公里");
+//                    textView.postInvalidate();
+//                }
+//            }
+//        }, 2000);
+//
+//        city.setText(number.substring(0, 1));
+//        Carnumber.setText(number.substring(1, number.length()));
     }
 
     private String addPoint(String number) {

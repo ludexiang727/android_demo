@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="car_me_known">我知道了</string>
+    <string name="car_confirm_btn">呼叫专车</string>
+    <string name="car_book_confirm_btn">预约专车</string>
+    <string name="flier_confirm_btn">呼叫快车</string>
+    <string name="fristclass_book_confirm_btn">预约豪华车</string>
+    <string name="fristclass_confirm_btn">呼叫豪华车</string>
+    <string name="flier_book_confirm_btn">预约快车</string>
+    <string name="flier_pool_confirm_btn">确认拼车</string>
+    <string name="flier_pool_station_confirm_btn">确认站点拼车</string>
+    <string name="unitaxi_confirm_btn">呼叫出租车</string>
+    <string name="unitaxi_book_confirm_btn">预约出租车</string>
+    <string name="onekey_title_bar">确认呼叫</string>
+    <string name="car_sending_order">正在发单..</string>
+    <string name="car_toast_address_empty">请先选择起始地</string>
+    <string name="car_wait_estimate_going">预估中，请稍候...</string>
+
+    <string name="car_no_car_tips">附近暂无车可用，您可预约</string>
+    <string name="car_no_car_tips_firstclass">提前预约豪华车</string>
+
+    <!-- 平滑移动 -->
+
+    <!-- 首页表单-->
+    <string name="car_form_end_address_hint">你要去哪儿</string>
+    <string name="car_city_not_open">当前城市暂未开通服务，敬请期待！</string>
+    <string name="car_help_call_tip">司机会直接联系乘车人，请提前通知乘车人准备出行</string>
+    <string name="car_cartype_enjoy_tip">聚集精选好司机</string>
+    <string name="car_first_class_form_tip">高素质司务员，高品质车型与车内设施</string>
+    <string name="firstclass_form_contact_hint">选择乘车人</string>
+
+    <!-- 动调 -->
+
+    <!-- 服务中的标题 -->
+    <string name="car_title_onservice_wait_arrival">等待接驾</string>
+    <string name="car_title_onservice_driver_prepared">司机已到达</string>
+    <string name="car_title_onservice_billing">行程中</string>
+    <string name="car_title_endservice">行程结束</string>
+
+    <!-- 通知栏 -->
+    <string name="car_noti_wait_arrival_driver">司机距您</string>
+    <string name="car_noti_wait_arrival_distance_unit">公里</string>
+    <string name="car_noti_wait_arrival_time_unit">分钟</string>
+    <string name="car_noti_wait_arrival_car">车辆已到达</string>
+    <string name="car_noti_wait_arrival_passenger">司机已等待</string>
+    <string name="car_noti_onservice_name">正在服务中</string>
+    <string name="car_noti_onservice_to_endaddress">正在开往</string>
+    <string name="car_noti_onservice_oncount_price">计算车费中</string>
+    <string name="car_noti_onservice_oning_price">已产生车费</string>
+    <string name="car_noti_endservice_pay_title">服务已完成，请点击支付</string>
+    <string name="car_noti_endservice_pay_pre">共</string>
+    <string name="car_noti_default_title">滴滴出行正在为您服务</string>
+
+    <!-- 等待应答 -->
+    <string name="car_wait_rsp_tip">等待</string>
+    <string name="car_wait_rsp_al_tip">已等待</string>
+    <string name="car_wait_rsp_carnumber_tip">正在为您寻找车辆</string>
+    <string name="car_wait_rsp_booking_pushtip">正在为您预约专车</string>
+    <string name="car_wait_rsp_booking_luxury_tip">正在为您预约车辆</string>
+    <string name="car_wait_rsp_realtime_luxury_tip">正在为您呼叫车辆</string>
+    <string name="firstclass_wait_rsp_booking_pushtip">正在为您预约豪华车</string>
+    <string name="firstclass_wait_rsp_realtime">正在为您呼叫豪华车</string>
+    <string name="unitaxi_wait_rsp_booking_pushtip">正在为您预约出租车</string>
+    <string name="flier_wait_rsp_booking_pushtip">正在为您预约快车</string>
+    <string name="flier_willing_not_wait">取消订单</string>
+    <string name="flier_willing_wait_more">继续等待</string>
+    <!--<string name="flier_willing_not_wait_for_firstcalss">不等了</string>-->
+    <!--<string name="flier_willing_wait_more_for_firstcalss">再等一会</string>-->
+    <!--<string name="car_wait_rsp_timeout">暂无司机应答，请稍候重试</string>-->
+    <string name="firstclass_wait_rsp_timeout">抱歉，该时段无合适的豪华车，您可以换个时段再试</string>
+    <string name="scar_wait_rsp_timeout">抱歉，该时段无合适的车辆，您可以换个时段再试</string>
+    <string name="realtime_wait_rsp_timeout">抱歉，您的附近没有合适的司务员</string>
+    <string name="wait_rsp_timeout_confirm">我知道了</string>
+    <string name="car_wait_rsp_close">订单已被关闭</string>
+    <string name="car_wait_rsp_title_matching">匹配中</string>
+
+    <!--预约成功界面取消按钮文案-->
+    <string name="booking_success_wait_no_cancel">暂不取消</string>
+    <string name="booking_success_confirm_cancel">取消预约</string>
+    <string name="booking_success_tip_content">您已成功预约专车，司机将准时接驾，且届时将主动与您联系，请耐心等待</string>
+
+    <!-- 愿等 -->
+    <string name="flier_willing_wait_tip">您确认要取消订单吗？</string>
+    <string name="flier_willing_wait_no_cancel">不取消</string>
+    <string name="flier_willing_wait_confirm_cancel">确认取消</string>
+    <string name="flier_willing_wait_content">司机未接单即可获得等待补偿券</string>
+    <string name="flier_willing_wait_discount_number">每天仅可获得一次</string>
+    <string name="flier_willing_wait_discount_title">等待补偿券</string>
+    <string name="flier_willing_wait_no_response">暂无应答</string>
+    <string name="flier_willing_wait_not_found_friend">抱歉，没有为您找到车辆和拼友</string>
+    <string name="flier_willing_wait_back_home">返回首页</string>
+    <string name="flier_willing_wait_send_ticket">小滴送您一张等待补偿券</string>
+
+    <string name="flier_willing_wait_no_conpon_tip">本次呼叫最多还将持续</string>
+    <string name="flier_willing_wait_conpon_tip">倒计时结束无司机应答，可获得等待补偿券</string>
+    <string name="flier_willing_wait_end_tip">愿等补偿券已存入您的账号</string>
+
+    <!-- 司机 -->
+    <string name="car_driver_verify_title">认证司机</string>
+
+    <!-- 等价接驾 eta -->
+    <!-- 行程中 气泡 eta -->
+
+    <!-- 愿等和选座 -->
+    <string name="car_will_wait_label">愿等</string>
+    <string name="car_will_wait_price">再省%s元</string>
+    <string name="car_will_wait_price_selected">已省%s元</string>
+    <string name="car_will_wait_easy">易拼成</string>
+    <string name="car_will_wait_tip_dialog_title">愿等折扣</string>
+    <string name="car_will_wait_tip_dialog_ok">好的</string>
+    <string name="car_will_wait_tip_dialog_cancel">算了</string>
+    <string name="flier_willing_wait_title">再等%s分钟</string>
+
+    <!-- 鱼鹰 -->
+
+    <!-- 预约 -->
+    <string name="car_book_order_notice">预约提醒</string>
+    <string name="car_book_order_half_hour">您预约的订单将在半小时之后出发</string>
+    <string name="car_driver_start_off">车辆即将出发</string>
+
+    <!-- 订单恢复 -->
+    <string name="car_recovery_btn_ok">马上恢复</string>
+    <string name="car_recovery_btn_wait_arrival_ok">进入行程</string>
+    <string name="car_recovery_btn_wait_arrival_cancel">不进入</string>
+
+    <string name="car_get_order_detail">正在获取订单详情</string>
+    <string name="car_get_order_detail_fail">获取订单详情失败</string>
+    <string name="car_recover_detail_tip">未完成订单正在恢复中</string>
+    <string name="car_recover_detail_fail_tip">恢复出了点问题</string>
+
+    <!-- 支付 -->
+    <string name="scar_pay_by_weixin">微信支付</string>
+    <string name="car_weinxin_unpay_title">您有待支付订单</string>
+    <string name="car_pay_entrance_title">去支付</string>
+    <string name="car_confirm">确定</string>
+    <string name="car_pay_yuan">元</string>
+    <string name="scar_pay_qq_unsupported_tip">未安装手机QQ或当前的版本不支持支付功能！</string>
+    <string name="scar_pay_waiting_txt">支付跳转中</string>
+    <string name="scar_pay_paid_no_need_pay">支付已成功，无需再次支付了</string>
+    <string name="car_pay_finish_title">共%1$s元</string>
+    <string name="scar_pay_close_content">您可以请司机帮助充值滴滴账户余额以抵扣车费</string>
+    <string name="scar_pay_recharge_close_title">线上支付暂时关闭</string>
+    <string name="scar_pay_recharge_close_content">请您将车费交给司机，以便他为您充值以扣除车费</string>
+    <string name="scar_wait_for_wewin_uninstall_tip">未安装微信，请安装微信后再支付</string>
+    <string name="scar_pay_wexin_low_version_txt">您的微信版本过低，请升级到5.3或以上版本吧～</string>
+    <string name="car_nosecret_pay_wait_title">正在处理您的支付申请</string>
+    <string name="car_nosecret_pay_fail_title">支付失败,请重试</string>
+
+
+    <string name="car_detail_current">当前计价</string>
+    <string name="scar_paid_detail">查看明细</string>
+    <string name="car_detail_cost">车费详情</string>
+    <string name="car_valuation_rule">计价规则</string>
+    <string name="car_detail_fee_loading">正在获取费用详情...</string>
+    <string name="car_detail_fee_error">获取费用详情失败，请重试...</string>
+    <string name="car_my_ticket_title">我的打车券</string>
+    <string name="car_my_ticket_rules">常见问题</string>
+
+    <string name="scar_pay_stop_content">暂未获得支付结果, 您可刷新支付。</string>
+    <string name="scar_switch_pay_type_failed">提交失败,稍候请重试!</string>
+    <string name="car_paybtn_txt_retry">重试</string>
+    <string name="car_paybtn_txt_cancel">取消</string>
+    <string name="car_cancel_success_txt">取消成功</string>
+
+    <!-- 企业报销 -->
+    <string name="car_paid_enterprise_reimbursement">申请报销</string>
+
+    <!-- 费用异议 -->
+    <string name="car_detail_fee_dissent_preparing_bill">正在为您处理账单</string>
+
+    <!-- 改派 -->
+    <string name="car_wait_for_arrival_dirver_change">司机改派</string>
+    <string name="car_cancel_trip_title_driver_reason">司机取消了订单</string>
+    <string name="car_cancel_trip_title_default">订单已被取消</string>
+    <string name="car_cancel_trip_loading_tip">正在获取数据</string>
+
+    <!-- 改派后的等待应答文案 -->
+    <string name="car_wait_for_response_apologize_recall_tip">抱歉，司机因故不能赶来，正在为您重新叫车</string>
+
+    <!-- 取消订单-行程 -->
+    <string name="car_canceling_order">正在取消订单请稍候...</string>
+    <string name="car_confrim_cancel_order">再等等吧，快为您找到司机了</string>
+    <string name="car_confrim_cancel_order_title_for_firstclass">确定要取消这次叫车吗？</string>
+    <string name="car_confrim_cancle_order_title_for_luxury">我们正在为您分配司务员，这个过程可能需要5~10分钟时间，请您稍等一下</string>
+    <string name="car_confrim_cancel_order_title_for_lineup">取消再叫车需重新排队</string>
+    <!--<string name="car_confrim_cancel_order_msg_for_lineup">当前共有{%d人}在等待，再等一会就为您寻找车辆了，取消再叫车重新排队等待更久</string>-->
+    <string name="car_confrim_cancel_order_msg_for_matching_info">在等一小会儿，即将为您优先派车</string>
+    <string name="car_confrim_cancel_order_msg_for_match_info_end">正在为您优先派车，现在取消将失去这个机会</string>
+    <string name="scar_wait_for_arrival_cancel_trip_waiting_txt">正在取消行程请稍候</string>
+
+    <!-- talk back 字符串 begin by ludexiang -->
+    <!-- talk back 字符串 end by ludexiang -->
+
+    <!-- 网络异常提示 -->
+    <string name="scar_net_fail_tip"> 网络不可用，请检查网络 </string>
+    <string name="scar_service_wander_tip">好像出问题了，请稍后再试。</string>
+    <string name="car_request_failed">请求失败，请稍后重试</string>
+    <string name="car_arrival_time_cannot_got">接驾时间暂无法获取</string>
+
+    <string name="next_im_dialog_title_close">不能再给司机发消息了</string>
+    <string name="next_im_toast_secret_error">出现问题，请重新尝试</string>
+    <string name="car_expired_phone_title">不能拨打司机电话了</string>
+    <string name="car_expired_phone_content">订单已结束多时，如需联系司机，可联系客服帮忙~</string>
+    <string name="car_connect_custom_service">联系客服</string>
+
+    <string name="car_circle_banner_voucher">代金券</string>
+    <string name="car_circle_banner_share">分享</string>
+    <string name="car_circle_banner_question">问卷</string>
+    <string name="car_circle_banner_title">更多优惠</string>
+
+    <string name="car_scene_tab_realtime">现在</string>
+    <string name="car_scene_tab_booking">预约</string>
+    <string name="car_scene_tab_flight">接送机</string>
+    <string name="car_scene_tab_chartered">包车</string>
+    <string name="car_scene_tab_firstclass_booking">尊享用车</string>
+    <string name="car_scene_tab_passenger">贴心代叫</string>
+    <string name="car_scene_tab_direct_train">深港车</string>
+
+    <string name="car_departure_unit">分钟</string>
+    <!-- 拼友卡片 -->
+    <string name="car_pool_complete_count">使用拼车%s次</string>
+    <string name="car_pool_driver_change_seat">司机为您更新为 {%s} 座</string>
+    <string name="car_pool_driver_change_price">本次行程费用 {%s} 元"</string>
+
+    <string name="car_banner_insurance_coupon">%1$s {%2$s} 元,%3$s,有效期至%4$s,滴滴将持续为您寻找车辆,请耐心等待。</string>
+
+    <string name="car_pool_station_info_driver_arrive">司机已到达，请在倒计时结束前上车</string>
+    <string name="car_pool_station_info_wait_driver">请在倒计时结束前走到该站点</string>
+    <string name="car_pool_station_info_driver_late_arrive">司机已到达，马上出发</string>
+
+    <string name="car_start_the_trip">出发</string>
+    <string name="car_get_chauffeur">我们会在 {5-10分钟} 内分配合适的司务员</string>
+    <string name="premium_car">专车</string>
+    <string name="express_car">快车</string>
+    <string name="hide_detail">收起明细</string>
+
+    <!-- UniTaxi -->
+    <string name="unitaxi_bubble_table_price_label">打表计价中</string>
+
+    <!-- 定时站点拼车 -->
+    <string name="flier_pool_station_home_prematch_tip">发单前请确认司机发车时间</string>
+    <string name="flier_pool_station_waitrsp_title">叫车成功</string>
+    <string name="flier_pool_station_waitrsp_departure_time">站点发车时间</string>
+    <string name="flier_pool_station_waitrsp_subtitle">请您准时到站点 {%s} 上车，司机临近到站时显示车辆信息</string>
+    <string name="flier_pool_station_timeout_tip_content">抱歉，司机因故不能来接您，请稍后再试</string>
+    <string name="flier_pool_station_cancel_dialog_content">已叫车成功，确定不等了吗？</string>
+
+    <!-- 跨区域拼车 -->
+    <string name="flier_trans_region_title">城际专线</string>
+    <string name="flier_trans_region_home_tip">上门接驾 目的地直达</string>
+    <string name="flier_trans_region_route_timeout_tip">当前线路不在运营时间</string>
+    <string name="flier_trans_region_route_timeout_suffix">的运营时间为</string>
+    <string name="flier_trans_region_citys_index">线路开通城市</string>
+    <string name="flier_trans_region_not_open_time">当前线路不在运营时间</string>
+
+    <string name="car_pay_view_detail">费用疑问</string>
+    <string name="car_view_price_round_tip">* 车费计算四舍五入取小数点后两位</string>
+    <string name="car_doubt_detail_cost_title">行程车费异议</string>
+    <string name="car_doubt_detail_cost_message">若你的车费有误，可以点击下方的按钮进入投诉流程，我们会跟进您的反馈。</string>
+    <string name="car_doubt_fee_view">不认可车费</string>
+
+    <!-- 取消感知的提示文案 -->
+    <string name="car_driver_arrived_early">司机点击了到达，您可与司机确认上车点</string>
+
+    <!-- 后期补充翻译 -->
+    <string name="car_tip_departure_one_hour_for_position">出发前一小时可看到司机位置</string>
+    <string name="car_dialog_ignore">跳过</string>
+
+    <string name="car_estimate_title">行程评价</string>
+
+    <string name="car_switch_pool_station_tip">请走到该站点上车</string>
+    <string name="flier_pool_station_info_default_tip">请到以下站点上车</string>
+    <string name="flier_call_order_ongoing">继续叫车</string>
+    <string name="flier_call_order_giveup">暂不叫车</string>
+    <string name="flier_pool_station_click_tip">点击绿点可更换上车站点</string>
+    <string name="car_pool_station_driver_late">司机正在赶来，请耐心等待</string>
+    <string name="car_pool_station_driver_near">司机正在赶来，请准备上车</string>
+    <string name="flier_pool_station_changed_tip">请走到站点{「%1s」}上车</string>
+    <string name="car_custom_feature_card_title">本次行程已选</string>
+
+    <string name="flier_coupon_tip_text">快领打车券</string>
+
+    <string name="car_banner_time_text">%1$s %2$s</string>
+    <string name="car_wait_response_today">今天</string>
+    <string name="car_wait_response_tomorrow">明天</string>
+    <string name="car_wait_response_after_tomorrow">后天</string>
+    <string name="car_hour">小时</string>
+
+    <string name="car_walk_tip">步行</string>
+    <string name="car_walk_to">至</string>
+    <string name="car_walk_geton">上车</string>
+    <string name="car_walk_meter">米</string>
+
+    <string name="car_driver_about_to_arrive">司机即将到达，请提前到路边等候。若您迟到，司机可无责取消订单</string>
+
+    <string name="car_wait_a_moment_tip">稍后再说</string>
+    <string name="car_pay_immediately_tip">立即支付</string>
+    <string name="car_content_empty"> </string>
+    
+    <string name="car_book_jump_airport">为了保障您的行程，请输入航班号\n航班延误，司机免费等待</string>
+
+    <string name="car_wsp_guide_tip">正在为您匹配拼车\n请稍后...</string>
+    <string name="car_wsp_guide_fail">很抱歉，未寻找到顺路拼友，重新发单将为您优先匹配！</string>
+
+</resources>

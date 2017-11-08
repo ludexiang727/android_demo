@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="oc_airport_confirm">确定</string>
+
+    <!-- 表单-->
+
+    <string name="oc_airport_hint_number">输入航班号 享更多接机服务</string>
+    <string name="oc_airport_label_time_delay">航班到达后 </string>
+    <string name="oc_airport_label_second">%1$d分钟</string>
+    <string name="oc_airport_label_usecar"> 用车</string>
+    <string name="oc_airport_delay_picker_title">航班延误免费等候</string>
+
+    <string name="oc_airport_table_arrival">到达</string>
+    <string name="oc_airport_table_after_arrival">到达后</string>
+    <string name="oc_airport_table_time_minute">分钟</string>
+
+    <string name="oc_airport_input_clean_history">清空历史记录</string>
+    <string name="oc_airport_input_date_picker_title">当地起飞时间</string>
+
+
+    <string name="oc_airport_info_headbar_title">航班信息</string>
+    <string name="oc_airport_info_hint_number">请输入航班号，如CA1517</string>
+    <string name="oc_airport_info_hint_time">请选择当地起飞时间</string>
+    <string name="oc_airport_info_pop_title_station">选择起终点</string>
+    <string name="oc_airport_info_pop_label_tomorrow">次日</string>
+    <string name="oc_airport_info_pop_text_date">%1$d月%2$d日</string>
+    <string name="oc_airport_info_toast_input_flight_number">请输入航班号</string>
+    <string name="oc_airport_info_toast_choose_date">请选择起飞日期</string>
+    <string name="oc_airport_info_toast_not_support_wanliu_car">用车城市暂未开通专车服务</string>
+    <string name="oc_airport_info_toast_not_support_wanliu_firstclass">用车城市暂未开通豪车服务</string>
+    <string name="oc_airport_info_toast_time_out_in_3hour">该航班已降落，默认为您选择现在用车</string>
+    <string name="oc_airport_info_toast_time_out">该航班已降落，无法预约用车</string>
+    <string name="oc_airport_info_toast_already_fly_time_out">该日期航班早已起飞，无法预约用车</string>
+    <string name="oc_airport_info_toast_time_too_late">仅支持预约三天内的用车</string>
+    <string name="oc_airport_info_toast_flight_exception">该航班出现异常，请查询航班状态后预约</string>
+    <string name="oc_airport_info_toast_no_flight_info">未找到指定日期的航班，请核对信息</string>
+    <string name="oc_airport_title_choose_airport">请您选择机场</string>
+    <string name="oc_airport_label_city_hot">热门城市</string>
+
+
+    <string name="oc_airport_ontheway_dialog_cancel_msg">当前航班已取消，如您已改签其它航班，建议重新发单</string>
+    <string name="oc_airport_ontheway_dialog_resend_order">重新发单</string>
+    <string name="oc_airport_ontheway_insurance_history_loading">正在获取账户历史信息</string>
+    <string name="oc_airport_ontheway_insurance_history_failed">获取账户历史信息失败，请手动输入身份信息</string>
+    <string name="oc_airport_ontheway_insurance_text_idcard">身份证</string>
+    <string name="oc_airport_ontheway_insurance_toast_input_info">请输入投保人信息</string>
+    <string name="oc_airport_ontheway_insurance_label_title">误机险身份核验</string>
+    <string name="oc_airport_ontheway_insurance_label_subtitle">请输入乘机人证件信息，滴滴将为Ta投保</string>
+    <string name="oc_airport_ontheway_insurance_hint_name">请输入乘机人姓名</string>
+    <string name="oc_airport_ontheway_insurance_hint_number">请输入乘机人%1$s</string>
+    <string name="oc_airport_ontheway_insurance_btn_confirm">确认输入</string>
+    <string name="oc_airport_ontheway_insurance_btn_cancel">不需要误机险</string>
+    <string name="oc_airport_ontheway_insurance_btn_close">关闭</string>
+    <string name="oc_airport_ontheway_insurance_btn_modify">确认修改</string>
+    <string name="oc_airport_ontheway_label_pre_clauses">确认即代表已阅读并同意</string>
+    <string name="oc_airport_ontheway_label_clauses">送机险条款</string>
+
+    <!-- 代人叫车-->
+
+    <!-- 一键叫X -->
+    <string name="onekeyx_toast_data_error">配置数据错误，请稍后重试</string>
+    <string name="onekeyx_toast_load_data">正在加载配置</string>
+    <string name="onekeyx_toast_config_error">获取配置信息失败，请稍后重试</string>
+    <string name="onekeyx_label_rule">我已阅读且同意{《活动规则》}</string>
+    <string name="onekeyx_toast_check_rule">请先阅读并勾选活动规则</string>
+    <string name="onekeyx_btn_confirm">确认呼叫</string>
+
+    <string name="car_net_fail_tip"> 网络不可用，请检查网络 </string>
+    <string name="car_get_order_info_failed">订单创建失败，请重试!</string>
+
+
+    <string name="car_flight_insurance_Verify"> 核实身份</string>
+    <string name="car_flight_insurance_check"> 点击查看</string>
+    <string name="car_flight_insurance_commit_success">提交成功</string>
+    <string name="car_flight_book_banner_number">航班号 </string>
+    <string name="car_flight_book_banner_time">预约出发时间 </string>
+
+</resources>

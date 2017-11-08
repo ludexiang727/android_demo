@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 小费 -->
+    <string name="ddrive_modify_tip_success">小费修改成功</string>
+    <string name="ddrive_add_tip_success">小费添加成功</string>
+    <string name="ddrive_add_tip_fail">小费添加失败，请重新尝试</string>
+    <string name="ddrive_modify_tip_fail">小费修改失败，请重新尝试</string>
+    <string name="ddrive_order_tip_format">%s元</string>
+    <string name="ddrive_order_tip_format_multiple">每位司机小费%s元</string>
+    <string name="ddrive_already_add_tip">已加小费{%s元}</string>
+    <string name="ddrive_add_tips">加小费</string>
+
+    <!--  取消 -->
+    <string name="ddrive_cancel_service">取消代驾</string>
+    <string name="ddrive_loading">正在加载...</string>
+    <string name="ddrive_canceled_dialog_content">正在获取取消原因</string>
+    <string name="ddrive_cancel_alert_cancel_button">暂不取消</string>
+    <string name="ddrive_cancel_alert_submit_button">继续取消</string>
+    <string name="ddrive_cancel_alert_content">如非特殊情况，请勿随意取消。若因您的原因频繁取消将会影响您的后续使用</string>
+    <string name="ddrive_cancel_alert_content_distance"> 司机{正在计费赶来}，现在取消您需要支付费用补偿司机</string>
+    <string name="ddrive_cancel_other_reason">其他原因</string>
+    <string name="ddrive_cancel_bottom_tip">取消规则</string>
+    <string name="ddrive_cancel_trip">取消行程</string>
+    <string name="ddrive_cancel_page_title_by_driver_cs">补充取消原因</string>
+    <string name="ddrive_cancel_page_modify_reasons">更改原因</string>
+    <string name="ddrive_cancel_page_default_content">若因您的原因频繁取消，将会影响您的后续使用</string>
+    <string name="ddirve_cancel_page_title">请选择取消原因</string>
+    <string name="ddrive_wait_for_arrival_driver_age"> 驾龄%d年</string>
+    <string name="ddrive_wait_for_arrival_driver_count">安全代驾%d次</string>
+    <string name="ddrive_confirm_fragment_title">呼叫代驾</string>
+
+    <string name="ddrive_map_live_valuat_servicetime_d">天</string>
+    <string name="ddrive_map_live_valuat_servicetime_h">小时</string>
+    <string name="ddrive_unpayed_order_hint">您有一笔代驾费未支付，支付后方可继续使用代驾服务</string>
+    <string name="ddrive_current_account">我</string>
+    <string name="ddrive_sending_order">代驾订单发送中</string>
+    <string name="ddrive_no_nearyby_drvier_toast">附近暂无空闲司机，请稍后重试</string>
+    <string name="ddrive_send_order_network_error">网络异常，请稍后重新尝试！</string>
+    <string name="ddrive_common_server_error_msg">系统开小差啦，请稍后重试</string>
+    <string name="ddrive_confirm_cancel_order">取消呼叫</string>
+    <string name="ddrive_confirm_dialog_call_count">(%d秒)</string>
+    <string name="ddrive_request_error">好像出错了~再试一次？</string>
+    <string name="ddrive_timedialog_duration">服务时长</string>
+    <string name="ddrive_timepikcer_hint_new">选择出发时间</string>
+    <string name="ddrive_select_end_address">请输入您的目的地</string>
+    <string name="ddrive_select_start_address">请输入您的出发地</string>
+
+
+    <!-- 崩溃恢复 -->
+    <string name="ddrive_recovery_wait_response_ddrive_title">将为您恢复订单</string>
+    <string name="ddrive_recovery_wait_response_ddrive_content">您有一个代驾订单正在进行</string>
+    <string name="ddrive_recovery_btn_ok">马上恢复</string>
+    <string name="ddrive_recovery_title_wait_arrival">您有行程在进行中</string>
+    <string name="ddrive_recovery_btn_wait_arrival_ok">进入行程</string>
+    <string name="ddrive_recovery_btn_wait_arrival_cancel">不进入</string>
+    <string name="ddrive_get_order_detail">正在获取订单详情</string>
+    <string name="ddrive_not_pay_title">您有待支付代驾订单</string>
+    <string name="ddrive_confirm_to_pay">去支付</string>
+    <string name="ddrive_cancel_to_pay">关闭</string>
+    <string name="ddrive_recovery_toast">未完成订单正在恢复中</string>
+    <string name="ddrive_recovery_failed">恢复出了点问题</string>
+
+    <!-- 通用 -->
+    <string name="ddrive_network_error">网络异常，请检查后重新尝试</string>
+
+    <!-- 支付 -->
+    <string name="ddrive_pay_failed">支付失败，请稍后重试</string>
+    <string name="ddrive_weixin_not_installed">您尚未安装微信</string>
+    <string name="ddrive_weixin_not_supported">您的微信版本过低，无法支付</string>
+    <string name="ddrive_enterprise_pay_failed">企业支付失败，请重试或选用其他支付方式</string>
+    <string name="ddrive_pay_btn">确认支付%s元</string>
+    <string name="ddrive_ali_pay_btn">支付宝支付%s元</string>
+    <string name="ddrive_wx_pay_btn">微信支付%s元</string>
+    <string name="ddrive_enterprise_pay_btn">企业支付%s元</string>
+    <string name="ddrive_voucher_deduction">代金券抵扣</string>
+    <string name="ddrive_voucher_deduction_choose">不使用券</string>
+    <string name="ddrive_no_voucher">没有代金券</string>
+    <string name="ddrive_not_support_voucher">不支持用券</string>
+    <string name="ddrive_confirm_fee">确认费用</string>
+    <string name="ddrive_reimbursement">发票与报销</string>
+
+
+
+    <string name="ddrive_voucher_deduction_value">-%s元</string>
+    <string name="ddrive_btn_confirm_cancel">确认取消</string>
+    <string name="ddrive_btn_not_cancel">暂不取消</string>
+    <string name="ddrive_cancel_trip_failed_for_normal_order_by_passenger">取消失败，请稍后重试</string>
+    <string name="please_select_reason_for_normal_order">请选择取消原因后再次提交</string>
+    <string name="ddrive_commiting_normal_order">正在为您取消订单</string>
+    <string name="ddrive_commiting">正在提交...</string>
+    <string name="ddrive_btn_submit_reason">提交原因</string>
+    <string name="ddrive_loading_bill">正在刷新支付费用</string>
+    <string name="ddrive_no_pay_channel_selected">请选择支付方式</string>
+    <string name="ddrive_weixin_auto_deduction_error">网络异常，暂未获取到您的免密支付结果</string>
+    <string name="ddrive_had_payed">订单已完成支付</string>
+    <string name="ddrive_nickname">%s师傅</string>
+    <string name="ddrive_normal_fee">代驾费</string>
+    <string name="ddrive_wait_fee">等候费</string>
+    <string name="ddrive_fee">费用</string>
+    <string name="ddrive_failed_and_refresh">加载失败，请重新刷新</string>
+    <string name="ddrive_refresh">刷新</string>
+    <string name="ddrive_red_package">红包</string>
+    <string name="ddrive_auto_pay">免密支付扣款中</string>
+    <string name="ddrive_auto_pay_failed">免密支付失败</string>
+
+
+    <string name="ddrive_ns_alert_cancel_button">稍后再说</string>
+    <string name="ddrive_ns_alert_submit_button">在线咨询</string>
+    <string name="ddrive_ns_alert_content">行程已结束，您可以尝试在线联系客服</string>
+    <string name="ddrive_not_support_im">该司机版本过低，无法接收对话消息，建议您电话沟通</string>
+
+    <!-- 动态调价 -->
+    <string name="ddrive_dynamic_refuse">稍后再试</string>
+    <string name="ddrive_dynamic_reason_hint">%1$s倍</string>
+
+    <!--<string name="ddrive_home_page_default_banner">滴滴代驾最新活动已出炉，点击进入「车主服务中心」查看</string>-->
+    <string name="ddrive_pickup_fee">接驾费</string>
+    <string name="ddrive_title_online_service">在线咨询</string>
+    <string name="ddrive_fee_estimate_error">"网络出问题了~请您查看网络设置\n点击屏幕，重新加载"</string>
+
+    <!-- 气泡相关文案 -->
+    <string name="ddrive_marker_near">距您</string>
+    <string name="ddrive_marker_kilometer">公里</string>
+    <string name="ddrive_marker_minute">分钟</string>
+    <string name="ddrive_marker_wait">等待</string>
+    <string name="ddrive_minute">分钟</string>
+    <string name="ddrive_driver_num">位司机</string>
+    <string name="ddrive_home_distance">最近空闲司机距您{%s公里}</string>
+    <string name="ddrive_driver_arrival_time">最快%s分钟接驾</string>
+    <string name="ddrive_drivers_nearby">附近有%s位司机</string>
+    <string name="ddrive_no_nearyby_drvier">附近暂无空闲司机</string>
+    <string name="ddrive_not_get_driver_nearby">附近司机数暂无法获取</string>
+    <string name="ddrive_waitrsp_searching">正在为您安排司机</string>
+    <string name="ddrive_waitrsp_call_driver_highlight">正在为您呼叫{代驾}司机</string>
+    <string name="ddrive_waitrsp_searching_cross_order">正在为您预约司机</string>
+    <string name="ddrive_waitrsp_searching_for_tip">重新为您安排司机</string>
+    <string name="ddrive_driver_arrived_time_over">等候费用获取中</string>
+
+    <!-- 取消 -->
+    <string name="ddrive_passenger_cancel_message">您取消了订单</string>
+    <string name="ddrive_driver_cancel_message">司机取消了订单</string>
+    <string name="ddrive_css_cancel_message">客服取消了订单</string>
+
+    <!-- 消单管控 -->
+    <string name="ddrive_penalty">爽约金</string>
+    <string name="ddrive_my_duty">系统判定您为责任方\n请支付爽约金</string>
+    <string name="ddrive_title_half_wait_title">中途等候</string>
+    <string name="ddrive_marker_free_wait_time">免费等候%s分钟</string>
+    <string name="ddrive_marker_free_wait_time_include">含行程前等候时间</string>
+    <string name="ddrive_marker_half_wait">中途等候中</string>
+    <string name="ddrive_marker_half_wait_count_time_wait">计费等候</string>
+    <string name="ddrive_marker_half_wait_count_time_wait_suffix">分钟</string>
+    <string name="ddrive_marker_driving">行驶</string>
+    <string name="ddrive_marker_driving_unit">公里</string>
+    <string name="ddrive_marker_serving">服务</string>
+    <string name="ddrive_marker_timeout">&#160;超时</string>
+    <string name="ddrive_marker_serving_day">天</string>
+    <string name="ddrive_marker_serving_hour">小时</string>
+    <string name="ddrive_marker_serving_minute">分钟</string>
+
+    <!-- 等待应答 -->
+    <string name="ddrive_timeout">暂无司机应答</string>
+    <string name="ddrive_confirm_cancel">正在为您安排司机，确定取消吗？</string>
+    <string name="ddrive_dialog_cancel_confirm">确认取消</string>
+    <string name="ddrive_dialog_cancel_cancel">暂不取消</string>
+    <string name="ddrive_estimate_rule">计费规则</string>
+    <string name="ddrive_server_limit_error">操作太频繁啦，请稍后再试</string>
+    <string name="ddrive_time_error">您的本地时间不正确，请重新设置</string>
+    <string name="ddrive_notification_end_serving">您本次行程已结束，请及时支付代驾费用。</string>
+    <string name="ddrive_order_timeout_notification_content">暂无司机应答，请稍候重试</string>
+    <string name="ddrive_notification_cancel_has_fee">您的行程已被司机取消，需支付费用，查看详情 &gt;</string>
+    <string name="ddrive_notification_cancel_no_fee">您的行程已被司机取消，查看详情 &gt;</string>
+    <string name="ddrive_notification_incity_startadd_changed">您的包司机订单起点已被司机修改</string>
+    <string name="ddrive_notification_incity_before_30">30分钟后，您的代驾服务即将开始</string>
+    <string name="ddrive_notification_incity_before_60">来自预约代驾订单：您现在可查看司机实时位置</string>
+    <string name="ddrive_canceling_order">正在取消订单，请稍候...</string>
+    <string name="ddrive_slow_pay_voucher_failed">您已获得慢必赔补偿券，稍后可在「我的钱包」中查看，券可抵扣本次费用</string>
+
+    <!--首页-->
+    <string name="ddrive_footbar_end_address_hint_text">输入您的目的地</string>
+    <string name="ddrive_help_call_myself">自己</string>
+    <string name="ddrive_departure_pickup_here">从当前位置出发</string>
+    <string name="ddrive_departure_pickup_there">从这里出发</string>
+    <string name="ddrive_logout_banner_string">滴滴代驾最新活动已出炉，点击进入「车主服务中心」查看</string>
+    <string name="ddrive_appoint_title">包时代驾</string>
+    <string name="ddrive_current_position">当前位置</string>
+
+    <!--title-->
+    <string name="oc_ddrive_waitrsp_title">等待应答</string>
+    <string name="oc_ddrive_wait_for_arrival_title">等待接驾</string>
+    <string name="oc_ddrive_driver_coming_title">司机已到达</string>
+    <string name="oc_ddrive_driver_driving_title">行程中</string>
+    <string name="oc_ddrive_end_service_title">行程结束</string>
+    <string name="oc_ddrive_end_cancel_service_title">行程取消</string>
+
+    <string name="ddrive_form_pay_way_personal_cash">乘车人现金支付</string>
+
+    <!--通知栏-->
+    <string name="ddrive_notify_wait_rsp_content">正在为您安排司机</string>
+    <string name="ddrive_notify_wait_rsp_tip">已等待</string>
+    <string name="ddrive_notify_wait_driver_content">已产生接驾费</string>
+    <string name="ddrive_notify_wait_driver_content_unit">元</string>
+    <string name="ddrive_notify_driver_arrived_title">司机已等待</string>
+    <string name="ddrive_notify_driver_arrived_content_prefix">已产生</string>
+    <string name="ddrive_notify_driver_arrived_content_pick_up_fee">接驾费</string>
+    <string name="ddrive_notify_driver_arrived_content_wait_fee">等候费</string>
+    <string name="ddrive_notify_driver_arrived_content_unit">元</string>
+    <string name="ddrive_notify_driving_title_prefix">正在开往</string>
+    <string name="ddrive_notify_driving_title_no_end_place">正在服务中</string>
+    <string name="ddrive_notify_driving_title_half_wailt">中途等候中</string>
+    <string name="ddrive_notify_driving_content">已产生代驾费</string>
+    <string name="ddrive_notify_end_service_content">服务已完成，请点击支付</string>
+
+    <string name="ddrive_estimate_price_fail">费用暂无法预估，点击重试</string>
+    <string name="ddrive_timepicker_title">选择出发时间</string>
+    <string name="ddrive_dur_title">选择服务时长</string>
+    <string name="ddrive_timepicker_text_chufa">出发</string>
+
+    <!--选联系人-->
+    <string name="ddrive_select_passenger_txt">换联系人</string>
+    <string name="ddrive_input_passenger_name_default_hint">请输入联系人姓名（选填）</string>
+    <string name="ddrive_input_passenger_phone_default_hint">请输入联系人手机号码</string>
+    <string name="ddrive_self">自己</string>
+
+    <string name="ddrive_driverbar_bianhao_label">编号</string>
+
+    <string name="ddrive_form_contact_hint">代人叫代驾</string>
+    <string name="ddrive_novice_share">分享给他人，实时查看行程信息</string>
+
+    <string name="ddrive_dialog_text_iknow">我知道了</string>
+    <string name="ddrive_operationactivity_title_default">更多福利</string>
+
+    <string name="ddrive_form_round_way_dancheng">单程</string>
+    <string name="ddrive_form_round_way_wangfan">往返</string>
+    <string name="ddrive_appoint_form_endaddress_hint_incity">[市内服务]</string>
+    <string name="ddrive_appoint_form_endaddress_hint_crosscity">[跨城服务]</string>
+    <string name="ddrive_scene_normal">日常代驾</string>
+    <string name="ddrive_endaddress_city_label">市</string>
+    <!--IM 快捷恢复-->
+    <string-array name="ddrive_im_quick_reply">
+        <item>您好，我的定位准确，请按导航来找我</item>
+        <item>我已到达出发地，请您尽快过来</item>
+        <item>我马上到，请您稍等一会</item>
+        <item>不要意思，我还要迟到几分钟，请您稍等一会</item>
+    </string-array>
+
+    <!-- 锁屏地图 -->
+    <string name="ddrive_driver_name_prefix">代驾司机 %s</string>
+    <string name="ddrive_lock_screen_wait_driver">编号%s</string>
+
+    <string name="ddrive_btn_confirm_send">确认呼叫</string>
+    <string name="ddrive_btn_change_startaddress">修改起点</string>
+    <string name="ddrive_html_jump">跳转</string>
+    <string name="ddrive_test_url_hint">url,如http://baidu.com</string>
+    <string name="ddrive_other_more">更多代驾福利</string>
+    <string name="ddrive_vipcard_more_tequan">更多特权</string>
+
+    <string name="ddrive_selectdriver_label">选您好评过的司机</string>
+    <string name="ddrive_selectdriver_bottom_nodriver">附近暂无</string>
+    <string name="ddrive_selectdriver_toast_nodriver">附近暂无您好评过的司机</string>
+    <string name="ddrive_selectdriver_toast_loading">正在获取司机到达时间</string>
+
+    <string name="ddrive_selectdriver_bottom_eta_checked">司机最快约%d分钟到达</string>
+    <string name="ddrive_selectdriver_bottom_eta">约%d分钟到达</string>
+    <string name="ddrive_selectdriver_tips">会员专享特权</string>
+    <string name="ddrive_misconfig_credit_text">查看代驾信用分</string>
+    <string name="ddrive_misconfig_credit_text_fail">信用分获取失败，点击了解信用分</string>
+    <string name="ddrive_misconfig_credit_content_randomhigh">您的信用习惯良好，请继续保持</string>
+    <string name="ddrive_misconfig_credit_content_random1">不随意取消订单可提高您的信用分</string>
+    <string name="ddrive_misconfig_credit_content_random2">订单结束24小时内支付可提高您的信用分</string>
+    <string name="ddrive_misconfig_credit_content_random3">司机到达后及时出发可提高您的信用分</string>
+
+    <string name="ddrive_cc_dialog_h5_label">代驾信用分</string>
+    <string name="ddrive_cc_dialog_h5_label_shuangyuejin">爽约金说明</string>
+    <string name="ddrive_cc_dialog_btn_cancel">稍后再试</string>
+    <string name="ddrive_cc_dialog_btn_confirm">确认呼叫</string>
+</resources>

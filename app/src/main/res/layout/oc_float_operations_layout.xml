@@ -1,0 +1,65 @@
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true">
+
+    <View
+        android:id="@+id/float_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"/>
+
+    <RelativeLayout
+        android:id="@+id/float_parent_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/float_operations_root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:background="@android:color/white"/>
+
+        <View
+            android:id="@+id/float_operation_separator"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@drawable/float_operation_separator"
+            android:layout_above="@id/float_operations_root"
+            android:layout_centerHorizontal="true"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:layout_above="@id/float_operation_separator">
+
+            <ImageView
+                android:id="@+id/float_operation_cancel"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_centerVertical="true"
+                android:layout_margin="15dp"
+                android:scaleType="fitXY"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/report_common_icon_close_selector"
+                android:contentDescription="@null"/>
+
+            <TextView
+                android:id="@+id/float_operations_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textSize="18sp"
+                android:padding="15dp"
+                android:textColor="#333"
+                android:layout_gravity="center"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</merge>

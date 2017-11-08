@@ -12,4 +12,16 @@
 
     <drawable name="travel_list_pressed">#e3e3e3</drawable>
     <drawable name="travel_list_normal">#00000000</drawable>
+    <color name="afanty_light_gray">#999999</color>
+    <color name="afanty_orange">#ff8903</color>
+    <color name="afanty_dark_gray">#666666</color>
+    <color name="oc_color_000000">#000000</color>
+    <!--4%透明度-->
+    <color name="oc_color_0A000000">#0A000000</color>
+    <!--8%透明度-->
+    <color name="oc_color_alpha_10">#1A000000</color>
+    <!--40%透明度-->
+    <color name="oc_color_alpha_40">#66000000</color>
+    <!--60%透明度-->
+    <color name="oc_color_alpha_60">#B4000000</color>
 </resources>

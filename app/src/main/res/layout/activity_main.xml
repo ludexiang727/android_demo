@@ -97,4 +97,21 @@
         android:layout_below="@id/bold_text"
         android:onClick="onTest"
         android:layout_toRightOf="@id/statistics"/>
+
+    <Button
+        android:id="@+id/float_operation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Float Operation"
+        android:layout_below="@id/test"
+        android:onClick="onFloat"
+        android:layout_toRightOf="@id/test"/>
+    <Button
+        android:id="@+id/method_cycle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="method-cycle"
+        android:layout_below="@id/float_operation"
+        android:onClick="onMethondCycle"
+        android:layout_toRightOf="@id/bold_text"/>
 </RelativeLayout>

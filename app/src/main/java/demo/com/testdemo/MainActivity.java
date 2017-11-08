@@ -5,6 +5,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import demo.com.testdemo.activity.ActivityA;
 import demo.com.testdemo.activity.CircleProActivity;
 import demo.com.testdemo.activity.GuessUGoActivity;
 import demo.com.testdemo.activity.LockScreenActivity;
@@ -14,6 +18,9 @@ import demo.com.testdemo.activity.StatisticsActivity;
 import demo.com.testdemo.activity.TestActivity;
 import demo.com.testdemo.activity.UberLoginActivity;
 import demo.com.testdemo.activity.UberWaitForActivity;
+import demo.com.testdemo.floatoperation.operation.Operation;
+import demo.com.testdemo.floatoperation.presenter.FloatOperationPresenter;
+import demo.com.testdemo.floatoperation.view.FloatOperationView;
 import demo.com.testdemo.widget.uber.mytravel.MyTravelActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -74,4 +81,56 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void onFloat(View v) {
+        List<Operation> mMoreOperations = new ArrayList<>();
+        mMoreOperations.add(Operation.OP_SHARE_HORIZONTAL);
+//        mMoreOperations.add(Operation.OP_EMERGENCY_HORIZONTAL);
+//        mMoreOperations.add(Operation.OP_TIPS_HORIZONTAL);
+        mMoreOperations.add(Operation.OP_NO_CAR_POOL);
+//        mMoreOperations.add(Operation.OP_HELP_HORIZONTAL);
+//        mMoreOperations.add(Operation.OP_MODIFY_STATION_HORIZONTAL);
+        mMoreOperations.add(Operation.OP_CARPOOL_PRICE_HORIZONTAL);
+//        mMoreOperations.add(Operation.OP_TIPS_HORIZONTAL);
+////
+//        mMoreOperations.add(Operation.OP_TIPS_HORIZONTAL);
+//        mMoreOperations.add(Operation.OP_SHARE_HORIZONTAL);
+//        mMoreOperations.add(Operation.OP_EMERGENCY_HORIZONTAL);
+//        mMoreOperations.add(Operation.OP_HELP_HORIZONTAL);
+//        mMoreOperations.add(Operation.OP_IM_HORIZONTAL);
+//        mMoreOperations.add(Operation.OP_MORE_HORIZONTAL);
+//        mMoreOperations.add(Operation.OP_CARPOOL_PRICE_HORIZONTAL);
+//        mMoreOperations.add(Operation.OP_TIPS_HORIZONTAL);
+
+//        mMoreOperations.add(Operation.OP_TIPS_HORIZONTAL);
+//        mMoreOperations.add(Operation.OP_SHARE_HORIZONTAL);
+//        mMoreOperations.add(Operation.OP_EMERGENCY_HORIZONTAL);
+//        mMoreOperations.add(Operation.OP_HELP_HORIZONTAL);
+//        mMoreOperations.add(Operation.OP_IM_HORIZONTAL);
+//        mMoreOperations.add(Operation.OP_MORE_HORIZONTAL);
+//        mMoreOperations.add(Operation.OP_CARPOOL_PRICE_HORIZONTAL);
+//        mMoreOperations.add(Operation.OP_TIPS_HORIZONTAL);
+//
+//        mMoreOperations.add(Operation.OP_TIPS_HORIZONTAL);
+//        mMoreOperations.add(Operation.OP_SHARE_HORIZONTAL);
+//        mMoreOperations.add(Operation.OP_EMERGENCY_HORIZONTAL);
+//        mMoreOperations.add(Operation.OP_HELP_HORIZONTAL);
+//        mMoreOperations.add(Operation.OP_IM_HORIZONTAL);
+//        mMoreOperations.add(Operation.OP_MORE_HORIZONTAL);
+//        mMoreOperations.add(Operation.OP_CARPOOL_PRICE_HORIZONTAL);
+//        mMoreOperations.add(Operation.OP_TIPS_HORIZONTAL);
+//
+//        mMoreOperations.add(Operation.OP_TIPS_HORIZONTAL);
+
+        FloatOperationPresenter floatOperation = new FloatOperationPresenter(this);
+        floatOperation
+                .buildFloatOperation(new FloatOperationView(this))
+                .buildTitle("更多")
+                .buildOperation(mMoreOperations)
+                .show();
+    }
+
+    public void onMethondCycle(View v) {
+        Intent intent = new Intent(this, ActivityA.class);
+        startActivity(intent);
+    }
 }

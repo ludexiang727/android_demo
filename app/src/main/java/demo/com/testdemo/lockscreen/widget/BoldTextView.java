@@ -1,5 +1,10 @@
 package demo.com.testdemo.lockscreen.widget;
 
+import android.text.TextUtils;
+import android.util.Log;
+import android.util.TypedValue;
+import android.widget.TextView;
+
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.AnimatorSet;
@@ -12,11 +17,12 @@ import android.graphics.Paint;
 import android.graphics.Rect;
 import android.graphics.RectF;
 import android.support.annotation.NonNull;
-import android.text.SpannableString;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
 import android.view.animation.AccelerateDecelerateInterpolator;
-import android.widget.TextView;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import demo.com.testdemo.R;
 
@@ -26,6 +32,7 @@ import demo.com.testdemo.R;
 
 public final class BoldTextView extends TextView {
 
+    private static final String REGEX = "\\{[^}]*\\}";
     private String mBoldStr;
     private String mNormalStr;
 
@@ -55,8 +62,7 @@ public final class BoldTextView extends TextView {
     private boolean isStarting;
     private boolean isDrawRect;
     private boolean isLoadAnim;
-    private boolean isSpanString;
-    private SpannableString mSpan;
+    private boolean isBoldDrawed, isNormalDrawed;
 
     public BoldTextView(Context context) {
         this(context, null);
@@ -128,8 +134,9 @@ public final class BoldTextView extends TextView {
         mBoldHeight = rect.height();
 
         mRectF = new RectF(0, mBoldHeight, getWidth(), mMarginTop + mBoldHeight);
-        drawBold(canvas);
+        // 以防bold被截断 故先画rect
         drawRect(canvas);
+        drawBold(canvas);
         drawNormal(canvas, metrics);
     }
 
@@ -139,11 +146,12 @@ public final class BoldTextView extends TextView {
      */
     private void drawBold(Canvas canvas) {
         // drawText 中的x , y 坐标是设置文案在什么位置显示的中心点而不是从(x,y)开始画
+        Log.e("ldx", "drawbold......");
         int count = canvas.save();
         int left = isHorCenter ? mScreenWidth / 2 : getMeasuredWidth() / 2;
         if (!mBoldStr.equals(mLastBold)) {
             upAnim();
-            if (mLastBold != null && !"".equals(mLastBold)) {
+            if (mLastBold != null && !TextUtils.isEmpty(mLastBold)) {
                 canvas.drawText(mLastBold, left, isLoadAnim ? mLastMoveTop : mMarginTop, mStrPaint);
             }
             canvas.drawText(mBoldStr, left, isLoadAnim ? mCurMoveTop : mMarginTop, mStrPaint);
@@ -162,30 +170,19 @@ public final class BoldTextView extends TextView {
         }
     }
 
-    public void setSpanString(boolean span, @NonNull SpannableString spanStr) {
-        isSpanString = span;
-        mSpan = spanStr;
-    }
-
     /**
      * 画普通字体
      * @param canvas
      * @param metrics
      */
     private void drawNormal(Canvas canvas, Paint.FontMetrics metrics) {
-        if (mNormalStr != null && !"".equals(mNormalStr)) {
-            int left = isHorCenter ? mScreenWidth / 2 : getMeasuredWidth() / 2;
+        if (!TextUtils.isEmpty(mNormalStr)) {
             mStrPaint.setColor(mNColor);
-            mStrPaint.setFakeBoldText(isNBold);
             mStrPaint.setTextSize(mNSize);
-            if (isSpanString) {
-//                canvas.drawText(mSpan, 0, mNormalStr.length(), left, metrics.bottom * 5 + mMarginTop + mPaddingTop, mStrPaint);
-                setText(mSpan);
-                return;
-            }
-
+            mStrPaint.setFakeBoldText(isNBold);
             mStrPaint.setTextAlign(Paint.Align.CENTER);
             mStrPaint.setTextScaleX(mNXScale);
+            int left = isHorCenter ? mScreenWidth / 2 : getMeasuredWidth() / 2;
             if (isHorCenter) {
                 canvas.drawText(mNormalStr, left, metrics.bottom * 5 + mMarginTop + mPaddingTop, mStrPaint);
             } else {
@@ -244,5 +241,11 @@ public final class BoldTextView extends TextView {
             }
         });
         return move;
+    }
+
+    private boolean isHighLight(String input) {
+        Pattern pattern = Pattern.compile(REGEX);
+        Matcher matcher = pattern.matcher(input);
+        return matcher.find();
     }
 }

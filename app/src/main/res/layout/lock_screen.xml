@@ -8,19 +8,21 @@
         xmlns:bold="http://schemas.android.com/apk/res-auto"
         android:id="@+id/lock_driver_info"
         android:layout_width="match_parent"
-        android:layout_height="45dp"
+        android:layout_height="120dp"
         android:gravity="center_horizontal"
+        android:background="#f00"
         bold:b_bold="false"
         bold:b_bold_y="40dp"
         bold:b_color="#333333"
-        bold:b_size="24sp"
+        bold:b_size="40sp"
         bold:hor_center="true"
-        bold:is_anim="false"
+        bold:is_anim="true"
         bold:n_bold="true"
         bold:n_color="#333333"
-        bold:n_padding_top="35dp"
-        bold:n_size="60sp"
-        bold:n_x_scale="0.8" />
+        bold:n_padding_top="5dp"
+        bold:draw_rect="true"
+        bold:n_size="13sp"
+        bold:n_x_scale="0.8"/>
 
     <LinearLayout
         android:layout_below="@id/lock_driver_info"
@@ -29,7 +31,8 @@
         android:layout_marginTop="-15dp"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:visibility="gone">
 
         <TextView
             android:gravity="center_vertical"

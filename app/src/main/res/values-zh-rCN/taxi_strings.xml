@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="taxi_str">出租车</string>
+    <string name="taxi_scene_now">现在</string>
+    <string name="taxi_scene_book">预约</string>
+    <string name="taxi_time_picker_realtime">现在</string>
+    <string name="taxi_time_picker_today">今天</string>
+    <string name="taxi_time_picker_tomorrow">明天</string>
+    <string name="taxi_time_picker_after_tomorrow">后天</string>
+    <string name="taxi_async_call_booking_timeout">预约时间不支持</string>
+    <!-- 基本字符串 -->
+    <string name="taxi_cancel">取消</string>
+    <string name="taxi_nearby_driver_count">辆车</string>
+    <string name="taxi_nearby_driver_empty">附近无车可用，请稍候</string>
+    <string name="taxi_nearby_driver_out10">在这里上车</string>
+    <string name="taxi_on_service">行程中</string>
+    <string name="taxi_end_service">行程结束</string>
+    <string name="taxi_go">%2$s%1$s出发</string>
+
+    <string name="taxi_has_no_fromtoaddress_tag">出发地或目的地无效，请重新输入</string>
+    <string name="taxi_receive_red">赚现金</string>
+
+    <string name="taxi_recovery_btn_wait_arrival_nopay_ok">去支付</string>
+    <string name="taxi_recovery_btn_wait_arrival_nopay_cancel">残忍拒绝</string>
+    <string name="taxi_recovery_title_wait_arrival_nopay">有一笔待支付订单</string>
+
+    <!-- 主界面叫车 -->
+    <string name="taxi_tip_picker_first">不加%s</string>
+    <string name="taxi_real_to_book_toast">附近无车，已为您切换到预约用车</string>
+
+    <!-- 等待接驾 -->
+    <string name="taxi_wait_for_arrival_ontrip_info">行程开始，祝您一路好心情！</string>
+
+    <!-- 打车费用详情 -->
+    <string name="taxi_cost_detail_self_total">单乘价格</string>
+    <string name="taxi_cost_detail_common_total">合乘价格</string>
+    <string name="taxi_cost_detail_tip">小费</string>
+    <string name="taxi_cost_detail_other">其他</string>
+
+    <!-- 亲情付打车券文案-->
+    <string name="taxi_pay_ticket_tip_family_pay">亲情付专用券抵扣</string>
+
+    <!-- 支付 -->
+    <string name="taxi_pay_notification_title">服务已完成，请点击支付</string>
+    <string name="taxi_pay_if_finish_pay">您是否完成了支付？</string>
+    <string name="taxi_pay_x_yuan">%1s元</string>
+    <string name="taxi_pay_confirm_wx_yuan_txt">微信支付%s元</string>
+    <string name="taxi_pay_confirm_wxagent_yuan_txt">微信免密支付%s元</string>
+    <string name="taxi_pay_confirm_qq_yuan_txt">QQ钱包支付%s元</string>
+    <string name="taxi_pay_confirm_zfb_yuan_txt">支付宝支付%s元</string>
+    <string name="taxi_pay_confirm_zfbagent_yuan_txt">支付宝免密支付%s元</string>
+    <string name="taxi_pay_confirm_bankcard_yuan_txt">银行卡支付%s元</string>
+    <string name="taxi_pay_confirm_bankcardagent_yuan_txt">银行卡免密支付%s元</string>
+    <string name="taxi_pay_confirm_family_yuan_txt">亲情付%s元</string>
+    <string name="taxi_waitforresponse_meter_agress">同意</string>
+    <string name="taxi_waitforresponse_meter_later">我再想想</string>
+    <string name="taxi_waitforresponse_meter_content">同意三公里内的司机打表来接?</string>
+
+    <string name="taxi_wait_for_wewin_uninstall_tip">未安装微信，请安装微信后再支付</string>
+    <string name="taxi_pay_qq_unsupported_tip">未安装手机QQ或当前的版本不支持支付功能！</string>
+    <string name="taxi_pay_by_bankcard">银行卡支付</string>
+    <string name="taxi_pay_by_familypay">亲情付</string>
+    <string name="taxi_pay_banlance">余额支付</string>
+    <string name="taxi_balance_label">[余额%s元]</string>
+    <string name="taxi_paid_integral">滴币兑换</string>
+
+    <string name="taxi_agent_pay_failed_content">您可以选择其他方式再次支付</string>
+    <string name="taxi_wxagent_pay_failed_title">微信扣款失败</string>
+    <string name="taxi_wxagent_paying_txt">微信扣款中,请稍后</string>
+    <string name="taxi_zfbagent_pay_failed_title">支付宝扣款失败</string>
+    <string name="taxi_zfbagent_paying_txt">支付宝扣款中,请稍后</string>
+    <string name="taxi_zfbagent_app_loading">正在启动支付宝客户端</string>
+    <string name="taxi_bankcardagent_paying_txt">银行卡扣款中，请稍后</string>
+    <string name="taxi_bankcardagent_pay_failed_title">银行卡扣款失败</string>
+    <string name="taxi_estimat_price_txt">约%s元</string>
+    <string name="taxi_estimat_exact_price_txt">%s元</string>
+
+    <string name="taxi_pay_warning_title_pre1">车费金额为</string>
+
+    <!-- 打赏司机-->
+
+    <!-- 评价 -->
+
+    <!-- 投诉与结束订单 -->
+    <string name="taxi_endorder_tip_dlg_title">取消承担风险</string>
+    <string name="taxi_endorder_tip_dlg_cancel_tel">联系师傅</string>
+    <string name="taxi_endorder_tip_dlg_cancel">暂不取消</string>
+    <string name="taxi_endorder_tip_dlg_confirm">取消行程</string>
+
+    <!-- 新首页 -->
+    <string name="taxi_footbar_end_address_hint_text">你要去哪儿</string>
+
+    <!-- 我的订单 -->
+    <string name="taxi_get_order_detail">正在获取订单详情</string>
+    <string name="taxi_get_order_detail_fail">获取订单详情失败</string>
+    <string name="taxi_get_order_detail_recovery">未完成订单正在恢复中</string>
+    <string name="taxi_get_order_detail_recovery_fail">恢复出了点问题</string>
+    <!--爽约金-->
+    <string name="taxi_breachpay_tip_top">请支付爽约金</string>
+    <string name="taxi_breachpay_isslustration">取消规则</string>
+    <string name="taxi_dynamic_price_risk_waring">司机答应后会立即来接您，若因您的原因取消了行程，需要{支付%s元爽约金}</string>
+    <string name="taxi_risker_recall_waring">收到您反馈的取消原因,系统将在{1天内}判定取消责任方。被判责任的司机或乘客将受到惩罚</string>
+    <string name="taxi_order_cancel_law">取消规则</string>
+    <string name="taxi_order_feedback_your_reason">您的反馈：</string>
+
+    <string name="taxi_content_yuan">元</string>
+    <string name="taxi_price_title">调度费</string>
+    <!-- 华为智键 -->
+    <string name="taxi_fetching_common_address">正在获取常用地址...</string>
+    <string name="taxi_voice_order_not_supported">暂不支持语音订单</string>
+
+    <string name="taxi_form_dynamic_price_content" formatted="false">%s%d元</string>
+    <string name="taxi_estimate_dynamic" formatted="false">增加%s%s元</string>
+    <string name="taxi_new_user_back_change">返回修改</string>
+    <string name="taxi_new_user_right_now">立即出发</string>
+    <string name="taxi_new_user_begin_book">开始预约</string>
+    <string name="taxi_new_user_confirm_title_now">请确认叫车</string>
+    <string name="taxi_new_user_title_second_booking">出发时间%s</string>
+    <string name="taxi_new_user_title_second_now">司机接单后,会立即来接您</string>
+    <string name="taxi_new_user_content_begin">起点:%s</string>
+    <string name="taxi_new_user_content_end">终点:%s</string>
+
+    <string name="taxi_evaluate_out_of_daily">已经不能评价了</string>
+
+
+    <!--盲人打车 使用的读屏文字-->
+    <string name="taxi_contentdescript_close">关闭</string>
+    <string name="taxi_found">发现</string>
+    <string name="taxi_contentdescript_clear_input">清空输入内容</string>
+
+    <string name="taxi_elder_order_timeout_diaolog_confirm">我知道了</string>
+    <string name="taxi_elder_order_timeout_diaolog_content">暂时没有司机应答,再试试吧</string>
+    <string name="taxi_elder_call_order_tip">马上叫车</string>
+    <string name="taxi_elder_enter_to_address">选择您要去哪儿</string>
+
+    <string name="taxi_elder_from_home">从家出发</string>
+    <string name="taxi_elder_go_home">回家</string>
+    <string name="taxi_elder_city_key_input_start">您在哪上车</string>
+    <string name="taxi_elder_city_key_input_end">您要去哪里</string>
+    <string name="taxi_elder_chose_start">选择出发地</string>
+    <string name="taxi_elder_chose_end">选择目的地</string>
+    <string name="taxi_elder_city_http_loading">正在搜索</string>
+    <string name="taxi_elder_address_no_result">搜索无结果</string>
+    <string name="taxi_elder_loading">正在加载中</string>
+    <string name="taxi_elder_loading_error">网络问题，点击重新加载</string>
+    <string name="taxi_elder_new_user_content_begin">出发地:%s</string>
+    <string name="taxi_elder_new_user_content_end">目的地:%s</string>
+
+    <string name="taxi_elder_response_cancel_confirm_txt">确认取消</string>
+    <string name="taxi_elder_response_cancel_cancel_txt">暂不取消</string>
+    <string name="taxi_confrim_cancel_order_elder">确定取消叫车吗？</string>
+    <string name="taxi_edler_foot_family_default">您可以使用亲情付</string>
+    <string name="taxi_edler_foot_family_elderguide">使用指南</string>
+    <string name="taxi_elder_foot_family_opened">您可使用亲情付</string>
+    <string name="taxi_elder_foot_callphone">敬老专线</string>
+    <string name="taxi_elder_end_select_label">点击输入目的地</string>
+
+    <!-- 打表来接 -->
+    <string name="taxi_in_table_valuation">打表计价中</string>
+
+    <!-- 信用管控 -->
+    <string name="taxi_my_user_credit_page_title">我的信用</string>
+
+    <!--一口价-->
+    <string name="taxi_other_pay">其他费用</string>
+    <string name="taxi_one_price_label">一口价</string>
+    <string name="taxi_one_price_label_carpool_succ">拼成价</string>
+    <string name="taxi_one_price_label_carpool_fail">拼不成价</string>
+    <string name="taxi_one_price_rule">一口价规则说明</string>
+    <string name="taxi_one_price_dialog_title">确认一口价%s元叫车</string>
+    <string name="taxi_one_price_dialog_content">不包含行程中所产生的过路费、高速费等其他费用，需您额外支付</string>
+    <string name="taxi_wait_for_response_oneprice_edit_invalid">暂不支持更高价格</string>
+    <string name="taxi_modify_one_price_pin">修改一口价金额</string>
+    <string name="taxi_wait_for_arrival_showprice_detail">查看价格</string>
+
+    <!-- 里程 -->
+
+    <string name="taxi_mileage_tips_content_default">用里程献爱心，让出行有温度</string>
+    <string name="taxi_mileage">本月里程</string>
+    <string name="taxi_mileage_end">捐里程</string>
+    <string name="taxi_experience_store">出租车体验店</string>
+
+    <!-- 拼车 -->
+    <string name="taxi_carpool_apollo_popup">与其他行程乘客共乘即拼成\n未拼成按打表计价</string>
+    <string name="taxi_carpool_apollo_if_success">请选择本次行程是否拼成\n与其他行程乘客共乘即拼成</string>
+    <string name="taxi_carpool_price_txt">拼成%s元</string>
+    <string name="taxi_order_carpool_fail_txt">拼不成%s元</string>
+    <!-- 拼车确认对话框 -->
+    <string name="taxi_carpool_confirm_content">请选择本次行程是否拼成\n与其他行程乘客共乘即拼成</string>
+    <string name="taxi_carpool_confirm_yes">拼成功</string>
+    <string name="taxi_carpool_confirm_no">没拼成</string>
+    <!--拼车捎话-->
+
+
+    <!--拼车二次确认dialog-->
+    <string name="taxi_carpool_confirm_rule">拼成规则说明</string>
+    <string name="taxi_carpool_confirm_cancel">我再想想</string>
+    <string name="taxi_carpool_confirm_ok">确认拼车</string>
+    <!--拼不成一口价二次确认-->
+    <string name="taxi_carpool_one_price_confirm_no_seats">您选择了拼车</string>
+    <string name="taxi_carpool_one_price_confirm_has_seats">您选择了拼车,需要%s个座位</string>
+
+
+    <!--代叫车行程共享-->
+    <string name="taxi_trip_share_dialog_title">司机已经应答</string>
+    <string name="taxi_trip_share_dialog_subtitle">向乘车人共享乘车信息</string>
+    <string name="taxi_trip_share_dialog_label">给乘车人留言</string>
+    <string name="taxi_trip_share_dialog_btn_share">共享给乘车人</string>
+    <string name="taxi_trip_share_loading_hint">正在生成分享内容。</string>
+    <string name="taxi_trip_share_input_default">到了目的地别忘了给我打个电话</string>
+    <string name="taxi_trip_share_reaktime_eta">司机%s分钟就到</string>
+    <string name="taxi_trip_share_booking_eta">%s出发</string>
+    <string name="taxi_trip_share_content">点击查看行程信息</string>
+    <string name="taxi_trip_share_realtime_title" formatted="false">我为你叫了一辆出租车，还有%s分钟就到了，车牌号：%s，司机%s，联系电话%s。</string>
+    <string name="taxi_trip_share_booking_title" formatted="false">我为你叫了一辆出租车，%s会去接你，车牌号：%s，司机%s，联系电话%s。</string>
+    <string name="taxi_trip_share_realtime_msg" formatted="false">我为你叫了一辆出租车，还有%s分钟就到了，车牌号：%s，司机%s，联系电话%s，点击查看行程信息%s。</string>
+    <string name="taxi_trip_share_booking_msg" formatted="false">我为你叫了一辆出租车，%s会去接你，车牌号：%s，司机%s，联系电话%s，点击查看行程信息%s。</string>
+
+    <string name="taxi_help_call_real_time_tip">正在为%1$s叫车</string>
+    <string name="taxi_help_call_book_tip">正在为%1$s预约出租车,  {%2$s}出发</string>
+
+    <!--老人打车引导-->
+
+    <!--代叫车联系人-->
+    <string name="taxi_help_call_payment">车费由乘车人现金支付</string>
+    <string name="taxi_help_call_user_credits">信用分达到%s分才可使用</string>
+    <string name="taxi_help_call_tip">司机会直接联系乘车人，请通知联系人准备出行</string>
+
+    <string name="taxi_help_call_dialog_main_title">请确认叫车</string>
+    <string name="taxi_help_call_dialog_second_title">司机接单后会立即联系乘车人</string>
+    <string name="taxi_help_call_dialog_ok">确认叫车</string>
+    <string name="taxi_help_call_dialog_cancel">返回修改</string>
+
+    <string name="taxi_pay">支付</string>
+    <string name="taxi_pin_yuan">元</string>
+    <string name="taxi_selection">选择</string>
+    <string name="taxi_pay_confirm_txt">确认支付</string>
+    <string name="taxi_arrival">完成</string>
+    <string name="taxi_red">发红包</string>
+    <string name="taxi_trip_share">行程共享</string>
+    <string name="taxi_pay_ticket_tip">代金券抵扣</string>
+    <string name="taxi_pay_ticket_unusable">不支持用券</string>
+    <string name="taxi_setvice_wander_tip">好像出问题了，请稍后再试。</string>
+    <string name="taxi_resending_order">正在重发订单请稍候...</string>
+    <string name="taxi_get_order_info_failed">订单创建失败，请重试!</string>
+    <string name="taxi_submit_cancel">取消</string>
+    <string name="taxi_submit_confirm">确定</string>
+    <string name="taxi_endorder_name">取消行程</string>
+    <string name="taxi_endedorder_name">行程已取消</string>
+    <string name="taxi_driver_info_title">出租车司机</string>
+    <string name="taxi_wait_for_arrival_title">等待接驾</string>
+    <string name="taxi_pay_confirm_per_yuan_txt">个人垫付%s元</string>
+    <string name="taxi_pay_getting_ticket_txt">正在更新代金券信息...</string>
+    <string name="taxi_pay_by_cash">司机已现金收款</string>
+    <string name="taxi_pay_ticket_cheating">不可用</string>
+    <string name="taxi_available">可用</string>
+    <string name="taxi_pay_confirm_yuan_txt">确认支付%s元</string>
+    <string name="taxi_pay_agent_yuan_txt">免密支付%s元</string>
+    <string name="taxi_pay_failed_txt">支付失败</string>
+    <string name="taxi_pay_check_tip_txt">暂未收到支付结果，可能由于您网络不够畅通，您可以</string>
+    <string name="taxi_pay_refresh_txt">刷新支付结果</string>
+    <string name="taxi_pay_call_txt">拨打客服电话</string>
+    <string name="taxi_pay_driver_trigger_label">司机收款%s元</string>
+    <string name="taxi_retry">再试一次</string>
+    <string name="taxi_pay_had_done">已支付</string>
+    <string name="taxi_pay_not_done">未支付</string>
+    <string name="taxi_pay_hint_for_foreigner">车内现金付款</string>
+    <string name="taxi_order_updating">订单状态更新中...</string>
+
+    <string name="taxi_recovery_btn_wait_arrival_cancel">不进入</string>
+    <string name="taxi_recovery_btn_wait_arrival_ok">进入行程</string>
+    <string name="taxi_recovery_title_wait_arrival">您有行程在进行中</string>
+    <string name="taxi_recovery_title_wait_response">将为您恢复叫车</string>
+    <string name="taxi_sending_order">正在发送订单...</string>
+    <string name="taxi_form_submit_txt_real_time">呼叫出租车</string>
+    <string name="taxi_form_submit_txt_book">预约出租车</string>
+    <string name="taxi_async_call_data_failed">起终点数据不完整！</string>
+    <string name="taxi_my_ticket_title">我的代金券</string>
+    <string name="taxi_net_fail_tip"> 网络不可用，请检查网络 </string>
+    <string name="taxi_async_call_pos_failed">出发地和目的地不能相同！</string>
+    <string name="taxi_loading_current_address">正在加载当前位置，请稍候~</string>
+    <string name="taxi_submiting">提交中…</string>
+    <string name="taxi_dialog_order_recall_success">重新叫车成功</string>
+    <string name="taxi_confrim_cancel_order">确定要取消这次叫车吗？</string>
+    <string name="taxi_cancel_taxi">取消叫车</string>
+    <string name="taxi_recall">重新叫车</string>
+    <string name="taxi_wait_time_remark">愿等司机15分钟</string>
+    <string name="taxi_wait_drivers_pk">%1$d位司机已应答 \n筛选中稍候%2$d秒</string>
+    <string name="taxi_expired_phone_content">订单已结束多时，如需联系司机，可联系客服帮忙~</string>
+    <string name="taxi_expired_phone_title">不能拨打司机电话了</string>
+    <string name="taxi_connect_custom_service">联系客服</string>
+    <string name="taxi_contact_driver_title">联系司机</string>>
+
+    <string name="taxi_order_cancelled_by_passenger">订单已被乘客取消</string>
+    <string name="taxi_order_cancelled_by_driver">订单已被司机取消</string>
+
+    <string name="taxi_on_service_driver_arrival_count_down_txt">车辆已到达</string>
+    <string name="taxi_on_service_driver_arrival_over_time_txt">您已迟到</string>
+
+    <string name="taxi_booking_hint">%1$s %2$s出发，出发时间前一小时可看到司机位置</string>
+
+    <string name="taxi_huawei_smartkey_address_home">家</string>
+    <string name="taxi_huawei_smartkey_address_company">公司</string>
+
+    <string name="taxi_one_price_carpool__dialog_succ">拼成</string>
+    <string name="taxi_one_price_carpool__dialog_fail">拼不成</string>
+
+    <string name="taxi_cancel_order_loading">订单取消中...</string>
+
+    <!-- 等待应答气泡 -->
+    <string name="taxi_wait_rsp_bubble_first_line">正在为您寻找车辆</string>
+    <string name="taxi_wait_rsp_bubble_notify">已通知</string>
+    <string name="taxi_wait_rsp_bubble_car_unit">辆</string>
+    <string name="taxi_wait_rsp_bubble_taxi_text">出租车</string>
+    <string name="taxi_wait_rsp_bubble_carpool_finding_friend">正在为你寻找车辆和拼友</string>
+    <string name="taxi_wait_rsp_bubble_elder_second_line">请您耐心等待</string>
+    <string name="taxi_wait_rsp_bubble_elder_first_line">正在努力为您叫车</string>
+    <string name="taxi_wait_rsp_bubble_apollo_first_line">正在为您通知附近车辆</string>
+    <!-- 行程中气泡 -->
+    <string name="taxi_on_service_bubble_away_from_you">距您</string>
+    <string name="taxi_on_service_bubble_km">公里</string>
+    <string name="taxi_on_service_bubble_minute">分钟</string>
+    <string name="taxi_on_service_bubble_away_from_destination">距离目的地</string>
+    <string name="taxi_on_service_bubble_eta_text">预计行驶</string>
+    <string name="taxi_on_service_bubble_away_end_address">距离终点</string>
+    <string name="taxi_on_service_bubble_eta_away_from_you">预计行驶</string>
+    <string name="taxi_on_service_bubble_carpool_fail_take_meter">拼不成打表</string>
+    <string name="taxi_on_service_bubble_book_go">距离出发</string>
+    <string name="taxi_on_service_bubble_book_hour">小时</string>
+    <string name="taxi_on_service_bubble_book_minute">分钟</string>
+    <string name="taxi_on_service_bubble_by_meter">打表计价中</string>
+
+    <!-- 等待应答页 -->
+    <string name="taxi_rsp_zero_tip">不加调度费</string>
+    <string name="taxi_rsp_op_panel_tip_price">调度费{%1$d元}</string>
+    <string name="taxi_rsp_op_panel_one_price">一口价{%1$d元}</string>
+    <string name="taxi_rsp_op_panel_carpool_succ_price">拼成价{%1$d元}</string>
+
+    <!-- 通知栏 -->
+    <string name="taxi_rsp_notification_title">正在为您寻找车辆</string>
+    <string name="taxi_rsp_notification_content">已等待</string>
+    <string name="taxi_wait_for_arrival_notification_driver_away_from_you">司机距您</string>
+    <string name="taxi_driver_arrival_notification_title">司机等待中</string>
+    <string name="taxi_on_service_notification_begin_time">00:00</string>
+    <string name="taxi_get_on_notification_go_to">正在开往</string>
+    <string name="taxi_get_on_notification_away_from_destination">距离目的地</string>
+    <string name="taxi_get_on_notification_serving">正在服务中</string>
+    <string name="taxi_get_on_notification_serving_time_unit">分钟</string>
+
+    <!-- 敬老出租 -->
+    <string name="taxi_elder_guide_processing">正在处理中...</string>
+
+
+    <!-- 待支付订单 -->
+    <string name="taxi_unpaid_order_list_title">待支付订单</string>
+    <string name="taxi_unpaid_order_list_loading">加载未支付订单...</string>
+    <string name="taxi_unpaid_order_list_net_error">网络延迟导致待支付订单查询失败,请刷新重试。</string>
+    <string name="taxi_unpaid_order_list_refresh">刷新</string>
+    <string name="taxi_unpaid_order_list_no_order">暂无待支付订单,快去叫车吧</string>
+    <string name="taxi_unpaid">待支付</string>
+    <string name="taxi_punish">爽约金</string>
+
+    <!-- 支付宝 抽奖 -->
+    <string name="taxi_alipay_lottery">抽奖</string>
+    <string name="taxi_lottery_url_get_failed">系统错误，请稍后再试</string>
+
+    <!-- elder-->
+    <string name="taxi_elder_from_address_default">我在这里</string>
+    <string name="taxi_elder_to_address_default">我去这里</string>
+    <!--动调二次确认页-->
+    <string name="taxi_dynamic_price_confirm_btn_cancel">过会儿再叫</string>
+    <string name="taxi_dynamic_price_confirm_btn_ok">接受加价叫车</string>
+    <string name="taxi_dynamic_price_title">高峰加价</string>
+    <string name="taxi_dynamic_price_content">高峰中断拥堵，叫车乘客多，司机少，提高叫车费才能更快打到车哦</string>
+    <!--调度费的选择器-->
+    <string name="taxi_dynamic_price_picker_content">%1$d元</string>
+    <!--5.0.10国际化新增-->
+    <string name="taxi_home_banner_foreigner_tip">出租车暂时只支持现金付款</string>
+
+    <string name="taxi_date_mmdd">%1$d月%2$d日</string>
+
+    <!-- 老年打车-->
+    <string name="taxi_audio_record_txt">开始录音</string>
+    <string name="taxi_audio_recognize_quit">退出</string>
+    <string name="taxi_audio_record_prepare">您可以这样说</string>
+    <string name="taxi_audio_record_alert">请您说出目的地</string>
+    <string-array name="taxi_audio_recognize_example">
+        <item>滴滴大厦</item>
+        <item>北苑机场东口</item>
+        <item>合生世界花园东门</item>
+        <item>燕尚园3期</item>
+        <item>上林溪小区1区6栋</item>
+        <item>首都机场T2航站楼</item>
+    </string-array>
+    <string name="taxi_audio_record_again">重新录音</string>
+    <string name="taxi_elder_call_taxi">呼叫出租车</string>
+    <string name="taxi_elder_audio_record_input_text">语音输入目的地</string>
+    <string name="taxi_elder_choose_start_address_list_header_text">从下面列表中点击选择您在哪上车</string>
+    <string name="taxi_elder_choose_end_address_list_header_text">从下面列表中点击选择您要去哪儿</string>
+
+    <string name="taxi_audio_recognize_unable_error_reason">录音设备不可用</string>
+    <string name="taxi_audio_recognize_unable_error_detail">请授权使用麦克风</string>
+
+    <string name="taxi_audio_recognize_network_error_reason">当前网络不稳定</string>
+    <string name="taxi_audio_recognize_network_error_detail">请检查网络连接</string>
+
+    <string name="taxi_audio_recognize_interrupte_error_reason">录音被打断</string>
+    <string name="taxi_audio_recognize_interrupte_error_detail">请重新录音</string>
+
+    <string name="taxi_audio_recognize_fail_error_reason">语音识别失败</string>
+    <string name="taxi_audio_recognize_fail_error_detail">请重新录音</string>
+
+    <string name="taxi_audio_recognize_sound_too_low_error_reason">说话音量较小</string>
+    <string name="taxi_audio_recognize_sound_too_low_error_detail">请提高音量描述</string>
+
+
+    <string name="taxi_onservice_newuser_dialog_title">开始您的第一次行程</string>
+
+    <string-array name="taxi_onservice_newuser_dialog_content">
+        <item>司机约在{%s前}到达上车点，{保持手机畅通}等待司机与您联系</item>
+        <item>地图上可以查看司机实时位置</item>
+        <item>随意取消会影响下次叫车成功率</item>
+    </string-array>
+
+</resources>

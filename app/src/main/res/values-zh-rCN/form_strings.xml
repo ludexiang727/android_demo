@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="car_type_dialog_title">选择车型</string>
+
+    <string name="talk_back_check_box_selected">%1$s 双击取消</string>
+    <string name="talk_back_check_box_unselected">%1$s 双击选中</string>
+    <string name="talk_back_will_wait_check_box_selected">当前已选中</string>
+    <string name="talk_back_will_wait_check_box_unselected">当前未选中</string>
+
+    <string name="taxi_tip_price_dialog_title">修改%s金额</string>
+</resources>
