@@ -1,29 +1,39 @@
 package demo.com.testdemo.widget;
 
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
 import android.animation.ValueAnimator;
 import android.animation.ValueAnimator.AnimatorUpdateListener;
 import android.content.Context;
+import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.Paint.Style;
 import android.graphics.RectF;
+import android.graphics.drawable.AnimationDrawable;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.VelocityTracker;
-import android.view.View;
 import android.view.ViewConfiguration;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import demo.com.testdemo.R;
+import demo.com.testdemo.widget.interf.ISlideView.IViewListener;
 
 /**
  * Created by ludexiang on 2018/1/31.
  */
 
-public class SlideView extends View {
+public class SlideView extends RelativeLayout {
 
+  private final int FILL = 0;
+  private final int STROKE = 1;
   private boolean isSlide = false;
   private int fillColor;
   private float radius;
+  private int style; // 默认是填充
+  private int strokeWidth;
 
   private Paint mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
   private RectF rectF = new RectF();
@@ -37,6 +47,10 @@ public class SlideView extends View {
   private float minSlop;
   private float minVelocity;
   private float maxVelocity;
+
+  private AnimationDrawable mArrowDrawable;
+  private Resources mRes;
+  private IViewListener mListener;
 
   public SlideView(Context context) {
     this(context, null);
@@ -52,21 +66,47 @@ public class SlideView extends View {
     isSlide = array.getBoolean(R.styleable.SlideView_isSlide, false);
     fillColor = array.getColor(R.styleable.SlideView_fillColor, 0);
     radius = array.getDimensionPixelOffset(R.styleable.SlideView_radius, 0);
+    style = array.getInt(R.styleable.SlideView_style, 0);
+    strokeWidth = array.getDimensionPixelOffset(R.styleable.SlideView_stroke_width, 0);
     array.recycle();
 
     ViewConfiguration configuration = ViewConfiguration.get(context);
     minSlop = configuration.getScaledTouchSlop();
     minVelocity = configuration.getScaledMinimumFlingVelocity();
     maxVelocity = configuration.getScaledMaximumFlingVelocity();
+    mRes = getResources();
+    setWillNotDraw(false);
   }
 
   @Override
-  protected void onDraw(Canvas canvas) {
-    super.onDraw(canvas);
+  protected void onFinishInflate() {
+    super.onFinishInflate();
+    if (isSlide) {
+      ImageView arrow = (ImageView) findViewById(R.id.slide_arrow);
+      mArrowDrawable = (AnimationDrawable) (arrow.getBackground());
+      if (mArrowDrawable != null && !mArrowDrawable.isRunning()) {
+        mArrowDrawable.start();
+      }
+    }
+  }
+
+  @Override
+  protected void dispatchDraw(Canvas canvas) {
     mPaint.setColor(fillColor);
-    mPaint.setStyle(Style.FILL);
+    mPaint.setStyle(style == FILL ? Style.FILL : Style.STROKE);
+    mPaint.setAntiAlias(true);
+    mPaint.setDither(true);
+    if (style == STROKE) {
+      mPaint.setStrokeWidth(strokeWidth);
+    }
     rectF.set(0, 0, getMeasuredWidth(), getMeasuredHeight());
     canvas.drawRoundRect(rectF, radius, radius, mPaint);
+    super.dispatchDraw(canvas);
+  }
+
+  @Override
+  public void onWindowFocusChanged(boolean hasWindowFocus) {
+    super.onWindowFocusChanged(hasWindowFocus);
   }
 
   @Override
@@ -116,6 +156,9 @@ public class SlideView extends View {
       newMoveX = newMoveX < 0 ? 0 : newMoveX;
       newMoveX = newMoveX > getMeasuredWidth() ? getMeasuredWidth() : newMoveX;
       setTranslationX(newMoveX);
+      if (mListener != null) {
+        mListener.move(newMoveX * 1f / getMeasuredWidth());
+      }
     }
   }
 
@@ -142,7 +185,7 @@ public class SlideView extends View {
     }
   }
 
-  private void goonMove(int from, int to, int duration) {
+  private void goonMove(final int from, final int to, int duration) {
     ValueAnimator animator = ValueAnimator.ofInt(from, to);
     animator.setDuration(duration);
     animator.addUpdateListener(new AnimatorUpdateListener() {
@@ -152,6 +195,32 @@ public class SlideView extends View {
         setTranslationX(marginLeft);
       }
     });
+    animator.addListener(new AnimatorListenerAdapter() {
+      @Override
+      public void onAnimationEnd(Animator animation) {
+        super.onAnimationEnd(animation);
+        if (mListener != null && to > from) {
+          mListener.moveEnd();
+        }
+        if (mArrowDrawable != null && mArrowDrawable.isRunning()) {
+          mArrowDrawable.stop();
+        }
+      }
+    });
     animator.start();
+  }
+
+  public void setListener(IViewListener listener) {
+    mListener = listener;
+  }
+
+  public void refresh() {
+    setTranslationX(0);
+    if (mListener != null) {
+      mListener.move(0f);
+    }
+    if (mArrowDrawable != null && !mArrowDrawable.isRunning()) {
+      mArrowDrawable.start();
+    }
   }
 }

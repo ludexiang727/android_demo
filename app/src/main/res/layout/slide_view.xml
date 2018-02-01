@@ -7,21 +7,34 @@
 
   <demo.com.testdemo.widget.SlideView
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="60dp"
     app:fillColor="#f05b48"
     app:isSlide="false"
-    app:radius="4dp"/>
+    app:radius="4dp"
+    app:style="fill"/>
 
   <demo.com.testdemo.widget.SlideView
+    android:id="@+id/slide_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:fillColor="#ff0000"
     app:isSlide="true"
-    app:radius="4dp"/>
+    app:radius="4dp"
+    app:style="fill">
+    <ImageView
+      android:id="@+id/slide_arrow"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerVertical="true"
+      android:layout_alignParentLeft="true"
+      android:layout_marginLeft="20dp"
+      android:background="@drawable/slide_frame"/>
+  </demo.com.testdemo.widget.SlideView>
 
   <TextView
+    android:id="@+id/slide_view_content"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="60dp"
     android:textColor="@android:color/white"
     android:textSize="17sp"
     android:text="text"

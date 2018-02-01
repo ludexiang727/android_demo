@@ -33,5 +33,10 @@
         <attr name="isSlide" format="boolean"/>
         <attr name="fillColor" format="color"/>
         <attr name="radius" format="dimension"/>
+        <attr name="style" format="enum">
+            <enum name="fill" value="0"/>
+            <enum name="stoke" value="1"/>
+        </attr>
+        <attr name="stroke_width" format="dimension"/>
     </declare-styleable>
 </resources>
