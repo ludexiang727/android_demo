@@ -114,4 +114,13 @@
         android:layout_below="@id/float_operation"
         android:onClick="onMethondCycle"
         android:layout_toRightOf="@id/bold_text"/>
+
+    <Button
+      android:id="@+id/slide_view"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="SlideView"
+      android:layout_below="@id/method_cycle"
+      android:onClick="onSlideView"
+      android:layout_toRightOf="@id/bold_text"/>
 </RelativeLayout>

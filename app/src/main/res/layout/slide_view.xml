@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="60dp"
+  android:layout_margin="10dp"
+  android:background="@drawable/slide_view_bg">
+
+  <demo.com.testdemo.widget.SlideView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:fillColor="#f05b48"
+    app:isSlide="false"
+    app:radius="4dp"/>
+
+  <demo.com.testdemo.widget.SlideView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:fillColor="#ff0000"
+    app:isSlide="true"
+    app:radius="4dp"/>
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textColor="@android:color/white"
+    android:textSize="17sp"
+    android:text="text"
+    android:gravity="center"/>
+</RelativeLayout>

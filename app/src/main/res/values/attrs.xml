@@ -28,4 +28,10 @@
         <attr name="draw_rect" format="boolean"/>
         <attr name="is_anim" format="boolean"/>
     </declare-styleable>
+
+    <declare-styleable name="SlideView">
+        <attr name="isSlide" format="boolean"/>
+        <attr name="fillColor" format="color"/>
+        <attr name="radius" format="dimension"/>
+    </declare-styleable>
 </resources>
