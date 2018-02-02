@@ -1,4 +1,4 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:app="http://schemas.android.com/apk/res-auto"
   android:layout_width="match_parent"
   android:layout_height="60dp"
@@ -16,7 +16,7 @@
   <demo.com.testdemo.widget.SlideView
     android:id="@+id/slide_view"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="60dp"
     app:fillColor="#ff0000"
     app:isSlide="true"
     app:radius="4dp"
@@ -39,4 +39,4 @@
     android:textSize="17sp"
     android:text="text"
     android:gravity="center"/>
-</RelativeLayout>
+</merge>

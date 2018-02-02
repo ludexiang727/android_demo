@@ -1,0 +1,12 @@
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <demo.com.testdemo.widget.SlideViewLayout
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_margin="10dp"
+    android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

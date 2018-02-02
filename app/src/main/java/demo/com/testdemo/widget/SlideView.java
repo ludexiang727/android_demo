@@ -13,6 +13,7 @@ import android.graphics.Paint.Style;
 import android.graphics.RectF;
 import android.graphics.drawable.AnimationDrawable;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.VelocityTracker;
 import android.view.ViewConfiguration;
@@ -141,7 +142,7 @@ public class SlideView extends RelativeLayout {
           boolean isFling = mTracker.getXVelocity() < minVelocity ? false : true;
           handleUp(slideMoreHalf, isFling);
           recycleVelocityTracker();
-
+          isMove = false;
           return true;
         }
       }
@@ -150,11 +151,13 @@ public class SlideView extends RelativeLayout {
   }
 
   private void handleMove(int moveX) {
+    Log.e("slide", "moveX " + moveX + " getTranslateX --> " + getTranslationX() + " mLastMoveX " + mLastMoveX);
     if (mLastMoveX != moveX) {
       mLastMoveX = moveX;
       int newMoveX = (int) (getTranslationX() + moveX + 0.5);
       newMoveX = newMoveX < 0 ? 0 : newMoveX;
       newMoveX = newMoveX > getMeasuredWidth() ? getMeasuredWidth() : newMoveX;
+      Log.e("slide", "newMoveX " + newMoveX );
       setTranslationX(newMoveX);
       if (mListener != null) {
         mListener.move(newMoveX * 1f / getMeasuredWidth());
@@ -201,9 +204,9 @@ public class SlideView extends RelativeLayout {
         super.onAnimationEnd(animation);
         if (mListener != null && to > from) {
           mListener.moveEnd();
-        }
-        if (mArrowDrawable != null && mArrowDrawable.isRunning()) {
-          mArrowDrawable.stop();
+          if (mArrowDrawable != null && mArrowDrawable.isRunning()) {
+            mArrowDrawable.stop();
+          }
         }
       }
     });
