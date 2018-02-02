@@ -151,7 +151,6 @@ public class SlideView extends RelativeLayout {
   }
 
   private void handleMove(int moveX) {
-    Log.e("slide", "moveX " + moveX + " getTranslateX --> " + getTranslationX() + " mLastMoveX " + mLastMoveX);
     if (mLastMoveX != moveX) {
       mLastMoveX = moveX;
       int newMoveX = (int) (getTranslationX() + moveX + 0.5);
