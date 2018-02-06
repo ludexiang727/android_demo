@@ -5,7 +5,6 @@ import android.animation.TimeInterpolator;
 import android.animation.ValueAnimator;
 import android.content.Context;
 import android.view.View;
-import com.test.demo.utils.UIUtils;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
@@ -174,10 +173,10 @@ public abstract class ViewAnimator extends ValueAnimator {
   }
 
   public static int getScreenWidth(Context ctx) {
-    return UIUtils.getScreenWidth(ctx);
+    return ctx.getResources().getDisplayMetrics().widthPixels;
   }
 
   public static int getScreenHeight(Context ctx) {
-    return UIUtils.getScreenHeight(ctx);
+    return ctx.getResources().getDisplayMetrics().heightPixels;
   }
 }

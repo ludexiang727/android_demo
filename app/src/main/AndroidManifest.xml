@@ -1,61 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="demo.com.testdemo">
+  xmlns:tools="http://schemas.android.com/tools"
+  package="demo.com.testdemo">
 
-    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
+  <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+  <uses-permission android:name="android.permission.WAKE_LOCK"/>
+  <uses-sdk tools:overrideLibrary="com.airbnb.lottie"/>
 
-    <application
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+  <application
+    android:allowBackup="true"
+    android:icon="@mipmap/ic_launcher"
+    android:label="@string/app_name"
+    android:supportsRtl="true"
+    android:theme="@style/AppTheme"
+    tools:replace="android:icon, android:label,android:theme">
+    <activity android:name=".MainActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+    </activity>
 
-        <activity android:name=".activity.StatisticsActivity"
-            android:screenOrientation="portrait"/>
+    <activity
+      android:name=".activity.StatisticsActivity"
+      android:screenOrientation="portrait"/>
 
-        <activity android:name=".activity.MaskGuideActivity"
-            android:screenOrientation="portrait"/>
+    <activity
+      android:name=".activity.MaskGuideActivity"
+      android:screenOrientation="portrait"/>
 
-        <activity android:name=".activity.UberLoginActivity"
-            android:screenOrientation="portrait"/>
+    <activity
+      android:name=".activity.UberLoginActivity"
+      android:screenOrientation="portrait"/>
 
-        <activity android:name=".activity.UberWaitForActivity"
-            android:screenOrientation="portrait"/>
+    <activity
+      android:name=".activity.UberWaitForActivity"
+      android:screenOrientation="portrait"/>
 
-        <activity android:name=".widget.uber.mytravel.MyTravelActivity"
-            android:screenOrientation="portrait"/>
+    <activity
+      android:name=".widget.uber.mytravel.MyTravelActivity"
+      android:screenOrientation="portrait"/>
 
-        <activity android:name=".activity.GuessUGoActivity"
-            android:screenOrientation="portrait"/>
+    <activity
+      android:name=".activity.GuessUGoActivity"
+      android:screenOrientation="portrait"/>
 
-        <activity android:name=".activity.PopupActivity"
-            android:screenOrientation="portrait"/>
+    <activity
+      android:name=".activity.PopupActivity"
+      android:screenOrientation="portrait"/>
 
-        <activity android:name=".activity.CircleProActivity"
-            android:screenOrientation="portrait"/>
+    <activity
+      android:name=".activity.CircleProActivity"
+      android:screenOrientation="portrait"/>
 
-        <activity android:name=".activity.LockScreenActivity"
-            android:screenOrientation="portrait"/>
+    <activity
+      android:name=".activity.LockScreenActivity"
+      android:screenOrientation="portrait"/>
 
-        <activity android:name=".activity.TestActivity"
-            android:screenOrientation="portrait"/>
+    <activity
+      android:name=".activity.TestActivity"
+      android:screenOrientation="portrait"/>
 
-        <activity android:name=".activity.ActivityA"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".activity.ActivityB"
-            android:screenOrientation="portrait"/>
+    <activity
+      android:name=".activity.ActivityA"
+      android:screenOrientation="portrait"/>
+    <activity
+      android:name=".activity.ActivityB"
+      android:screenOrientation="portrait"/>
 
-        <activity android:name=".activity.SlideActivity"
-          android:screenOrientation="portrait"/>
-    </application>
+    <activity
+      android:name=".activity.SlideActivity"
+      android:screenOrientation="portrait"/>
+  </application>
 
 </manifest>

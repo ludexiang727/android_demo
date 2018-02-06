@@ -21,23 +21,16 @@
     app:isSlide="true"
     app:radius="4dp"
     app:style="fill">
-    <ImageView
-      android:id="@+id/slide_arrow1"
+    <com.airbnb.lottie.LottieAnimationView
+      android:id="@+id/animation_view"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_centerVertical="true"
       android:layout_alignParentLeft="true"
       android:layout_marginLeft="20dp"
-      android:background="@drawable/slide_view_1"/>
-
-    <ImageView
-      android:id="@+id/slide_arrow2"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_centerVertical="true"
-      android:layout_alignParentLeft="true"
-      android:layout_marginLeft="30dp"
-      android:background="@drawable/slide_view_2"/>
+      app:lottie_fileName="arrow.json"
+      app:lottie_loop="true"
+      app:lottie_autoPlay="true" />
   </demo.com.testdemo.widget.SlideView>
 
   <View

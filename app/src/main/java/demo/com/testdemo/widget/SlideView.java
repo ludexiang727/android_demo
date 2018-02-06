@@ -2,6 +2,7 @@ package demo.com.testdemo.widget;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
+import android.animation.AnimatorSet;
 import android.animation.ValueAnimator;
 import android.animation.ValueAnimator.AnimatorUpdateListener;
 import android.content.Context;
@@ -17,9 +18,16 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.view.VelocityTracker;
 import android.view.ViewConfiguration;
+import android.view.animation.Animation;
+import android.view.animation.AnticipateOvershootInterpolator;
+import android.view.animation.BounceInterpolator;
+import android.view.animation.CycleInterpolator;
+import android.view.animation.LinearInterpolator;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import com.airbnb.lottie.LottieAnimationView;
 import demo.com.testdemo.R;
+import demo.com.testdemo.animators.PairAnimator;
 import demo.com.testdemo.widget.interf.ISlideView.IViewListener;
 
 /**
@@ -49,8 +57,7 @@ public class SlideView extends RelativeLayout {
   private float minVelocity;
   private float maxVelocity;
 
-  //  private AnimationDrawable mArrowDrawable;
-  private ImageView arrow1, arrow2;
+  private LottieAnimationView mArrowDrawable;
   private Resources mRes;
   private IViewListener mListener;
 
@@ -85,12 +92,7 @@ public class SlideView extends RelativeLayout {
     super.onFinishInflate();
     if (isSlide) {
       if (getChildCount() > 0) {
-        arrow1 = (ImageView) findViewById(R.id.slide_arrow1);
-        arrow2 = (ImageView) findViewById(R.id.slide_arrow2);
-//      mArrowDrawable = (AnimationDrawable) (arrow.getBackground());
-//      if (mArrowDrawable != null && !mArrowDrawable.isRunning()) {
-//        mArrowDrawable.start();
-//      }
+        mArrowDrawable = (LottieAnimationView) findViewById(R.id.animation_view);
       }
     }
   }
@@ -207,9 +209,9 @@ public class SlideView extends RelativeLayout {
         super.onAnimationEnd(animation);
         if (mListener != null && to > from) {
           mListener.moveEnd();
-//          if (mArrowDrawable != null && mArrowDrawable.isRunning()) {
-//            mArrowDrawable.stop();
-//          }
+          if (mArrowDrawable != null && mArrowDrawable.isAnimating()) {
+            mArrowDrawable.cancelAnimation();
+          }
         }
       }
     });
@@ -225,8 +227,8 @@ public class SlideView extends RelativeLayout {
     if (mListener != null) {
       mListener.move(0f);
     }
-//    if (mArrowDrawable != null && !mArrowDrawable.isRunning()) {
-//      mArrowDrawable.start();
-//    }
+    if (mArrowDrawable != null && !mArrowDrawable.isAnimating()) {
+      mArrowDrawable.playAnimation();
+    }
   }
 }
