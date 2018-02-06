@@ -11,7 +11,7 @@ import android.util.Log;
 import android.view.View;
 
 /**
- * Created by ludexiang on 16/7/1.
+ * Created by ludexiang on sliding_view16/sliding_view7/1.
  */
 public class HistogramView extends View {
     private static final int HISTOGRAM_WIDTH = 60;

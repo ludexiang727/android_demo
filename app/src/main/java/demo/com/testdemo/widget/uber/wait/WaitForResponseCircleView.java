@@ -19,7 +19,7 @@ import android.view.animation.AccelerateDecelerateInterpolator;
 import android.view.animation.LinearInterpolator;
 
 /**
- * Created by ludexiang on 16/8/16.
+ * Created by ludexiang on sliding_view16/8/sliding_view16.
  */
 public class WaitForResponseCircleView extends View {
     private final float mCenterX;

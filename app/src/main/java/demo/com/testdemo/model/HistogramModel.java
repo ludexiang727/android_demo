@@ -1,7 +1,7 @@
 package demo.com.testdemo.model;
 
 /**
- * Created by ludexiang on 16/7/1.
+ * Created by ludexiang on sliding_view16/sliding_view7/1.
  */
 public class HistogramModel {
     private int mRedPoint;

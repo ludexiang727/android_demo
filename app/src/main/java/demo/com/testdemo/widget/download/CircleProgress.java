@@ -14,7 +14,7 @@ import android.view.View;
 
 
 /**
- * Created by ludexiang on 2017/1/12.
+ * Created by ludexiang on 2017/1/sliding_view12.
  */
 
 public class CircleProgress extends View {

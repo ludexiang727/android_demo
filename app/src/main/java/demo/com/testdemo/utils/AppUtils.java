@@ -3,7 +3,7 @@ package demo.com.testdemo.utils;
 import android.content.Context;
 
 /**
- * Created by ludexiang on 16/7/14.
+ * Created by ludexiang on sliding_view16/sliding_view7/sliding_view14.
  */
 public class AppUtils {
 

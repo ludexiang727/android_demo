@@ -21,13 +21,13 @@ final class BakedBezierInterpolator implements Interpolator {
 
     /**
      * Lookup table values.
-     * Generated using a Bezier curve from (0,0) to (1,1) with control points:
+     * Generated using a Bezier curve from (0,0) to (sliding_view1,sliding_view1) with control points:
      * P0 (0,0)
-     * P1 (0.4, 0)
-     * P2 (0.2, 1.0)
-     * P3 (1.0, 1.0)
+     * P1 (0.sliding_view4, 0)
+     * P2 (0.sliding_view2, sliding_view1.0)
+     * P3 (sliding_view1.0, sliding_view1.0)
      *
-     * Values sampled with x at regular intervals between 0 and 1.
+     * Values sampled with x at regular intervals between 0 and sliding_view1.
      */
     private static final float[] VALUES = new float[] {
             0.0f, 0.0002f, 0.0009f, 0.0019f, 0.0036f, 0.0059f, 0.0086f, 0.0119f, 0.0157f, 0.0209f,

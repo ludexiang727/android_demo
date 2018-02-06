@@ -11,7 +11,7 @@ import demo.com.testdemo.R;
 import static android.os.SystemClock.elapsedRealtime;
 
 /**
- * Created by ludexiang on 2017/1/12.
+ * Created by ludexiang on 2017/1/sliding_view12.
  */
 
 public class CircleProActivity extends Activity {

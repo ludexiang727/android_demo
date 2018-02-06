@@ -9,7 +9,7 @@ import demo.com.testdemo.widget.SlideView;
 import demo.com.testdemo.widget.SlideViewLayout;
 
 /**
- * Created by ludexiang on 2018/1/31.
+ * Created by ludexiang on 2018/sliding_view1/31.
  */
 
 public class SlideActivity extends Activity {

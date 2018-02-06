@@ -21,7 +21,7 @@ import demo.com.testdemo.widget.StatisticsGridView;
 import demo.com.testdemo.widget.StatisticsView;
 
 /**
- * Created by ludexiang on 16/7/1.
+ * Created by ludexiang on sliding_view16/sliding_view7/1.
  */
 public class StatisticsActivity extends Activity {
 

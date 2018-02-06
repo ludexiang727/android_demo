@@ -27,7 +27,7 @@ import java.util.regex.Pattern;
 import demo.com.testdemo.R;
 
 /**
- * Created by ludexiang on 2017/2/21.
+ * Created by ludexiang on 2017/sliding_view2/21.
  */
 
 public final class BoldTextView extends TextView {

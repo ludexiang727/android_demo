@@ -30,7 +30,7 @@ import demo.com.testdemo.widget.MaskGuideView;
 
 
 /**
- * Created by ludexiang on 16/7/13.
+ * Created by ludexiang on sliding_view16/sliding_view7/sliding_view13.
  */
 public class MaskGuideController implements MaskGuideLinePath.ICallback {
     private final int Y = 450; // view de 高度

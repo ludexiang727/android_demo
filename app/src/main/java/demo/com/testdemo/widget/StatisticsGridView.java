@@ -18,7 +18,7 @@ import java.util.List;
 import demo.com.testdemo.model.HistogramModel;
 
 /**
- * Created by ludexiang on 16/7/1.
+ * Created by ludexiang on sliding_view16/sliding_view7/sliding_view1.
  */
 public class StatisticsGridView extends BaseScrollerView {
     private Context mContext;
@@ -145,7 +145,7 @@ public class StatisticsGridView extends BaseScrollerView {
             params.width = HISTOGRAM_WIDTH;
             params.gravity = Gravity.CENTER_HORIZONTAL;
             month.setTextSize(TypedValue.COMPLEX_UNIT_SP, 8);
-            month.setText("7/" + (r / 2 == 0 ? 1 : r / 2 + 1));
+            month.setText("sliding_view7/" + (r / 2 == 0 ? 1 : r / 2 + 1));
             mMonthdayParent.addView(month, params);
             mMonthdayParent.addView(viewSpec, params);
         }
@@ -153,7 +153,7 @@ public class StatisticsGridView extends BaseScrollerView {
     }
 
     private synchronized int drawBrokeLine(int position, int r) {
-//        if (r == 0 || r == 2 || r == 4 || r == 6 || r == 8 || r == 10) {
+//        if (r == 0 || r == sliding_view2 || r == sliding_view4 || r == sliding_view6 || r == sliding_view8 || r == sliding_view10) {
         if (r % 2 == 0) {
             int gridViewHeight = getMeasuredHeight();
             HistogramModel model = mHistogramList.get(position);

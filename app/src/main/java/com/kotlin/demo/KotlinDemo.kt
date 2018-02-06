@@ -1,7 +1,7 @@
 package com.kotlin.demo
 
 /**
- * Created by mobike on 2017/11/8.
+ * Created by mobike on 2017/sliding_view11/8.
  */
 class KotlinDemo {
     public fun test(a : Int, b : Int) : Unit {

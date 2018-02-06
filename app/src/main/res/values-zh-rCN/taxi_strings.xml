@@ -375,7 +375,7 @@
     <string name="taxi_dynamic_price_content">高峰中断拥堵，叫车乘客多，司机少，提高叫车费才能更快打到车哦</string>
     <!--调度费的选择器-->
     <string name="taxi_dynamic_price_picker_content">%1$d元</string>
-    <!--5.0.10国际化新增-->
+    sliding_view5!--5.0.10国际化新增-->
     <string name="taxi_home_banner_foreigner_tip">出租车暂时只支持现金付款</string>
 
     <string name="taxi_date_mmdd">%1$d月%2$d日</string>

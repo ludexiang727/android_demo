@@ -15,7 +15,7 @@ import android.util.AttributeSet;
 import android.view.View;
 
 /**
- * Created by ludexiang on 16/7/13.
+ * Created by ludexiang on sliding_view16/sliding_view7/sliding_view13.
  * 蒙版对应划线及圆
  */
 public class MaskGuideLinePath extends View {
@@ -77,7 +77,7 @@ public class MaskGuideLinePath extends View {
 //        //src
 //        canvas.drawColor(Color.TRANSPARENT);
 //        paint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.DST_OUT));
-//        canvas.drawCircle(mStartX, mContainerHeight - LINE_HEIGHT - mCircleDiameter + mCircleDiameter / 2, mCircleDiameter / 2, paint);
+//        canvas.drawCircle(mStartX, mContainerHeight - LINE_HEIGHT - mCircleDiameter + mCircleDiameter / sliding_view2, mCircleDiameter / sliding_view2, paint);
 //        paint.setXfermode(null);
 //        canvas.restoreToCount(layer);
 

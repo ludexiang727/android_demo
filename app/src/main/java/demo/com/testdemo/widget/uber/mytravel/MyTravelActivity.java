@@ -8,7 +8,7 @@ import demo.com.testdemo.widget.uber.mytravel.presenter.TravelPresenter;
 import demo.com.testdemo.widget.uber.mytravel.view.custom.TravelListView;
 
 /**
- * Created by ludexiang on 16/8/19.
+ * Created by ludexiang on sliding_view16/8/19.
  */
 public class MyTravelActivity extends BaseTravelActivity {
     private TravelListView mListView;

@@ -14,7 +14,7 @@ import android.widget.TextView;
 import demo.com.testdemo.R;
 
 /**
- * Created by ludexiang on 16/8/10.
+ * Created by ludexiang on sliding_view16/8/10.
  */
 public class WaitForResponseView extends RelativeLayout implements View.OnLongClickListener,
         /*WaitForResponseCancelOrderView.ICancelOrderLocation*/ WaitResponseCancelView.ICancelOrderLocation {

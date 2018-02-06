@@ -3,7 +3,7 @@ package demo.com.testdemo.widget.uber.wait;
 import android.content.Context;
 
 /**
- * Created by ludexiang on 16/8/11.
+ * Created by ludexiang on sliding_view16/8/sliding_view11.
  */
 public class WaitResponseController {
     private WaitForResponseView mResponseView;

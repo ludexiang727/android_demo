@@ -5,7 +5,7 @@ import java.util.List;
 import demo.com.testdemo.widget.uber.mytravel.model.TravelModel;
 
 /**
- * Created by ludexiang on 16/8/19.
+ * Created by ludexiang on sliding_view16/8/19.
  */
 public interface IListView {
     void setData(List<TravelModel> data);

@@ -14,7 +14,7 @@ import android.view.ViewConfiguration;
 import android.widget.RelativeLayout;
 
 /**
- * Created by ludexiang on 2017/2/28.
+ * Created by ludexiang on 2017/sliding_view2/28.
  */
 
 public class LockScreenRootViewGroup extends RelativeLayout {

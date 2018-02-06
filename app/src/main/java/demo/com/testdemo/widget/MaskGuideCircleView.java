@@ -7,7 +7,7 @@ import android.util.AttributeSet;
 import android.view.View;
 
 /**
- * Created by ludexiang on 16/7/15.
+ * Created by ludexiang on sliding_view16/sliding_view7/sliding_view15.
  */
 public class MaskGuideCircleView extends View {
 

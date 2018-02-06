@@ -24,7 +24,7 @@ import android.view.animation.AccelerateInterpolator;
 import android.view.animation.LinearInterpolator;
 
 /**
- * Created by ludexiang on 16/8/18.
+ * Created by ludexiang on sliding_view16/8/18.
  */
 public class WaitResponseCancelView extends SurfaceView implements SurfaceHolder.Callback {
     private final int mScreenWidth;

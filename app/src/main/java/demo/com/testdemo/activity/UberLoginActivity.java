@@ -6,7 +6,7 @@ import android.os.Bundle;
 import demo.com.testdemo.R;
 
 /**
- * Created by ludexiang on 16/8/4.
+ * Created by ludexiang on sliding_view16/8/4.
  */
 public class UberLoginActivity extends Activity {
 

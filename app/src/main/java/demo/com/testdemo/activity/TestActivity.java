@@ -7,7 +7,7 @@ import android.support.annotation.Nullable;
 import demo.com.testdemo.R;
 
 /**
- * Created by ludexiang on 2017/3/22.
+ * Created by ludexiang on 2017/sliding_view3/22.
  */
 
 public class TestActivity extends Activity {

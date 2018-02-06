@@ -14,7 +14,7 @@ import demo.com.testdemo.widget.uber.mytravel.model.TravelModel;
 import demo.com.testdemo.widget.uber.mytravel.view.custom.TravelItemParent;
 
 /**
- * Created by ludexiang on 16/8/19.
+ * Created by ludexiang on sliding_view16/8/19.
  */
 public class TravelListViewAdapter <T extends TravelModel> extends BaseAdapter {
     private Context mContext;

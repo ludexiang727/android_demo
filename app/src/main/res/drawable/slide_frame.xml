@@ -1,6 +1,21 @@
 <animation-list
   xmlns:android="http://schemas.android.com/apk/res/android"
   android:oneshot="false">
-  <item android:drawable="@drawable/right_slide_1" android:duration="300"/>
-  <item android:drawable="@drawable/right_slide_2" android:duration="300"/>
+  <item android:drawable="@drawable/sliding_view1" android:duration="50"/>
+  <item android:drawable="@drawable/sliding_view2" android:duration="50"/>
+  <item android:drawable="@drawable/sliding_view3" android:duration="50"/>
+  <item android:drawable="@drawable/sliding_view4" android:duration="50"/>
+  <item android:drawable="@drawable/sliding_view5" android:duration="50"/>
+  <item android:drawable="@drawable/sliding_view6" android:duration="50"/>
+  <item android:drawable="@drawable/sliding_view7" android:duration="50"/>
+  <item android:drawable="@drawable/sliding_view8" android:duration="50"/>
+  <item android:drawable="@drawable/sliding_view9" android:duration="50"/>
+  <item android:drawable="@drawable/sliding_view10" android:duration="50"/>
+  <item android:drawable="@drawable/sliding_view11" android:duration="50"/>
+  <item android:drawable="@drawable/sliding_view12" android:duration="50"/>
+  <item android:drawable="@drawable/sliding_view13" android:duration="50"/>
+  <item android:drawable="@drawable/sliding_view14" android:duration="50"/>
+  <item android:drawable="@drawable/sliding_view15" android:duration="50"/>
+  <item android:drawable="@drawable/sliding_view16" android:duration="50"/>
+  <item android:drawable="@drawable/sliding_view17" android:duration="50"/>
 </animation-list>

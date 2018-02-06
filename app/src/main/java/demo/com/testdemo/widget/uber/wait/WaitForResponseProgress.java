@@ -17,7 +17,7 @@ import android.view.animation.AccelerateDecelerateInterpolator;
 import demo.com.testdemo.R;
 
 /**
- * Created by ludexiang on 16/8/10.
+ * Created by ludexiang on sliding_view16/sliding_view8/sliding_view10.
  */
 public class WaitForResponseProgress extends View {
 

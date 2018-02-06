@@ -12,7 +12,7 @@ import demo.com.testdemo.R;
  * 优先使用{@link #string}字段，其次使用 {@link #text}
  *
  * @author Jin Liang
- * @since 16/9/6
+ * @since sliding_view16/sliding_view9/6
  */
 public class Operation {
     public static final int ID_HELP = 1;

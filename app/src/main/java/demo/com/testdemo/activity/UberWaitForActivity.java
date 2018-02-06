@@ -7,7 +7,7 @@ import demo.com.testdemo.widget.uber.wait.WaitForResponseView;
 import demo.com.testdemo.widget.uber.wait.WaitResponseController;
 
 /**
- * Created by ludexiang on 16/8/10.
+ * Created by ludexiang on sliding_view16/8/10.
  */
 public class UberWaitForActivity extends Activity {
 

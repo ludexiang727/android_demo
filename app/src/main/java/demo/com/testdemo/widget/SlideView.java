@@ -23,7 +23,7 @@ import demo.com.testdemo.R;
 import demo.com.testdemo.widget.interf.ISlideView.IViewListener;
 
 /**
- * Created by ludexiang on 2018/1/31.
+ * Created by ludexiang on 2018/sliding_view1/31.
  */
 
 public class SlideView extends RelativeLayout {
@@ -49,7 +49,8 @@ public class SlideView extends RelativeLayout {
   private float minVelocity;
   private float maxVelocity;
 
-  private AnimationDrawable mArrowDrawable;
+  //  private AnimationDrawable mArrowDrawable;
+  private ImageView arrow1, arrow2;
   private Resources mRes;
   private IViewListener mListener;
 
@@ -83,10 +84,13 @@ public class SlideView extends RelativeLayout {
   protected void onFinishInflate() {
     super.onFinishInflate();
     if (isSlide) {
-      ImageView arrow = (ImageView) findViewById(R.id.slide_arrow);
-      mArrowDrawable = (AnimationDrawable) (arrow.getBackground());
-      if (mArrowDrawable != null && !mArrowDrawable.isRunning()) {
-        mArrowDrawable.start();
+      if (getChildCount() > 0) {
+        arrow1 = (ImageView) findViewById(R.id.slide_arrow1);
+        arrow2 = (ImageView) findViewById(R.id.slide_arrow2);
+//      mArrowDrawable = (AnimationDrawable) (arrow.getBackground());
+//      if (mArrowDrawable != null && !mArrowDrawable.isRunning()) {
+//        mArrowDrawable.start();
+//      }
       }
     }
   }
@@ -156,7 +160,7 @@ public class SlideView extends RelativeLayout {
       int newMoveX = (int) (getTranslationX() + moveX + 0.5);
       newMoveX = newMoveX < 0 ? 0 : newMoveX;
       newMoveX = newMoveX > getMeasuredWidth() ? getMeasuredWidth() : newMoveX;
-      Log.e("slide", "newMoveX " + newMoveX );
+      Log.e("slide", "newMoveX " + newMoveX);
       setTranslationX(newMoveX);
       if (mListener != null) {
         mListener.move(newMoveX * 1f / getMeasuredWidth());
@@ -203,9 +207,9 @@ public class SlideView extends RelativeLayout {
         super.onAnimationEnd(animation);
         if (mListener != null && to > from) {
           mListener.moveEnd();
-          if (mArrowDrawable != null && mArrowDrawable.isRunning()) {
-            mArrowDrawable.stop();
-          }
+//          if (mArrowDrawable != null && mArrowDrawable.isRunning()) {
+//            mArrowDrawable.stop();
+//          }
         }
       }
     });
@@ -221,8 +225,8 @@ public class SlideView extends RelativeLayout {
     if (mListener != null) {
       mListener.move(0f);
     }
-    if (mArrowDrawable != null && !mArrowDrawable.isRunning()) {
-      mArrowDrawable.start();
-    }
+//    if (mArrowDrawable != null && !mArrowDrawable.isRunning()) {
+//      mArrowDrawable.start();
+//    }
   }
 }

@@ -9,7 +9,7 @@ import demo.com.testdemo.R;
 import demo.com.testdemo.controller.MaskGuideController;
 
 /**
- * Created by ludexiang on 16/7/14.
+ * Created by ludexiang on sliding_view16/sliding_view7/sliding_view14.
  */
 public class MaskGuideActivity extends Activity {
     private MaskGuideController mMaskGuideController;

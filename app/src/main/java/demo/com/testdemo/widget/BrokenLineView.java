@@ -14,7 +14,7 @@ import java.util.List;
 import demo.com.testdemo.R;
 
 /**
- * Created by ludexiang on 16/7/2.
+ * Created by ludexiang on sliding_view16/sliding_view7/sliding_view2.
  */
 public class BrokenLineView extends BaseScrollerView {
 

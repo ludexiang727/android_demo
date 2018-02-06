@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.RelativeLayout;
 
 /**
- * Created by ludexiang on 16/7/13.
+ * Created by ludexiang on sliding_view16/sliding_view7/sliding_view13.
  */
 public class MaskGuideView extends RelativeLayout {
 

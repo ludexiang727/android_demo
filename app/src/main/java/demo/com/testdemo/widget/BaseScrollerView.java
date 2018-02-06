@@ -6,7 +6,7 @@ import android.view.MotionEvent;
 import android.view.View;
 
 /**
- * Created by ludexiang on 16/7/4.
+ * Created by ludexiang on sliding_view16/sliding_view7/4.
  */
 public class BaseScrollerView extends View {
     protected int mXScroll;

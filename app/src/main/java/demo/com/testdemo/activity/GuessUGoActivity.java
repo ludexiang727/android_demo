@@ -15,7 +15,7 @@ import android.widget.TextView;
 import demo.com.testdemo.R;
 
 /**
- * Created by ludexiang on 16/9/21.
+ * Created by ludexiang on sliding_view16/sliding_view9/21.
  */
 public class GuessUGoActivity extends Activity {
     private TextView endText;

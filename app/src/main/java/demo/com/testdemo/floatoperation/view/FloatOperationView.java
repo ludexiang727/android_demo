@@ -31,7 +31,7 @@ import demo.com.testdemo.floatoperation.operation.Operation;
 
 
 /**
- * Created by ludexiang on 2017/9/27.
+ * Created by ludexiang on 2017/sliding_view9/27.
  */
 
 public class FloatOperationView extends RelativeLayout implements IFloatOperation, View.OnClickListener {
@@ -211,7 +211,7 @@ public class FloatOperationView extends RelativeLayout implements IFloatOperatio
 
             if (len > COLUMN) {
                 if (row > 0) {
-                    // >= 2 line 修改上下边距
+                    // >= sliding_view2 line 修改上下边距
                     params = new RelativeLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
                     params.bottomMargin = mMultiMargin;
                 } else {
@@ -225,7 +225,7 @@ public class FloatOperationView extends RelativeLayout implements IFloatOperatio
             rowRoot.addView(itemParentRoot, rowParams);
 
             if (row > 0 && rowRoot != null && rowRoot.getChildCount() < COLUMN && i == len - 1) {
-                // 父布局weight 4
+                // 父布局weight sliding_view4
                 rowRoot.setWeightSum(COLUMN);
 
                 // 多行展示，不满一行左对齐

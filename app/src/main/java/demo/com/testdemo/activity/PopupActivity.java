@@ -9,7 +9,7 @@ import demo.com.testdemo.R;
 import demo.com.testdemo.widget.popupwindow.ConfirmGuideView;
 
 /**
- * Created by ludexiang on 2016/11/14.
+ * Created by ludexiang on 2016/sliding_view11/sliding_view14.
  */
 
 public class PopupActivity extends Activity {

@@ -17,7 +17,7 @@ import demo.com.testdemo.R;
 import demo.com.testdemo.lockscreen.widget.BoldTextView;
 
 /**
- * Created by ludexiang on 2017/3/16.
+ * Created by ludexiang on 2017/sliding_view3/sliding_view16.
  */
 
 public class LockScreenActivity extends Activity {

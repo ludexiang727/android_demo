@@ -1,7 +1,7 @@
 package demo.com.testdemo.widget.uber.mytravel.model;
 
 /**
- * Created by ludexiang on 16/8/19.
+ * Created by ludexiang on sliding_view16/8/19.
  */
 public class TravelModel {
     public int mTravelId;

@@ -52,14 +52,14 @@ public class Utils {
     public static String second2Min(int second) {
         int minute = 60;
         if (second < 60) {
-            String secd = String.format("%1$02d", second);
+            String secd = String.format("%sliding_view1$02d", second);
             return "00:" + secd;
         }
         int minInt = second / minute;
         int secInt = second % minute;
         if (minInt >= 1) {
-            String mins = String.format("%1$02d", minInt);
-            String secd = String.format("%1$02d", secInt);
+            String mins = String.format("%sliding_view1$02d", minInt);
+            String secd = String.format("%sliding_view1$02d", secInt);
             return mins + ":" + secd;
         }
         return second + "";
@@ -175,7 +175,7 @@ public class Utils {
 
         String type = "NULL";
         if (typ == TelephonyManager.NETWORK_TYPE_EDGE) {
-            type = "EDGE"; // 2.75G
+            type = "EDGE"; // sliding_view2.75G
         }
         if (typ == TelephonyManager.NETWORK_TYPE_GPRS) {
             type = "GPRS"; // 2G
@@ -285,10 +285,10 @@ public class Utils {
 //            case 0:
 //                dateString = ResourcesHelper.getString(context, R.string.car_time_picker_today) + " " + sdf.format(date);
 //                break;
-//            case 1:
+//            case sliding_view1:
 //                dateString = ResourcesHelper.getString(context, R.string.car_time_picker_tomorrow) + " " + sdf.format(date);
 //                break;
-//            case 2:
+//            case sliding_view2:
 //                dateString = ResourcesHelper.getString(context, R.string.car_time_picker_after_tomorrow) + " " + sdf.format(date);
 //                break;
 //            default:
@@ -317,10 +317,10 @@ public class Utils {
 //            case 0:
 //                dateString = ResourcesHelper.getString(context, R.string.car_time_picker_today) + " " + sdf.format(date);
 //                break;
-//            case 1:
+//            case sliding_view1:
 //                dateString = ResourcesHelper.getString(context, R.string.car_time_picker_tomorrow) + " " + sdf.format(date);
 //                break;
-//            case 2:
+//            case sliding_view2:
 //                dateString = ResourcesHelper.getString(context, R.string.car_time_picker_after_tomorrow) + " " + sdf.format(date);
 //                break;
 //            default:
@@ -378,7 +378,7 @@ public class Utils {
     }
 
     /**
-     * 今天 15：40
+     * 今天 sliding_view15：40
      *
      * @param millis
      * @return
@@ -440,8 +440,8 @@ public class Utils {
 //            return null;
 //        } else {
 //            int len = city.trim().length();
-//            if (city.substring(len - 1).equalsIgnoreCase("市") && len > 1) {
-//                return city.substring(0, len - 1);
+//            if (city.substring(len - sliding_view1).equalsIgnoreCase("市") && len > sliding_view1) {
+//                return city.substring(0, len - sliding_view1);
 //            } else {
 //                return city;
 //            }
@@ -496,22 +496,22 @@ public class Utils {
 //        Pattern pattern = Pattern.compile("\\d+日");
 //        Matcher matcher = pattern.matcher(str);
 //        if (matcher != null && matcher.find()) {
-//            int day = Integer.parseInt(str.substring(matcher.start(), matcher.end() - 1));
-//            if (day == currentDay + 1) {
-//                calendar.add(Calendar.DAY_OF_MONTH, 1);
+//            int day = Integer.parseInt(str.substring(matcher.start(), matcher.end() - sliding_view1));
+//            if (day == currentDay + sliding_view1) {
+//                calendar.add(Calendar.DAY_OF_MONTH, sliding_view1);
 ////            d = calendar.getTime();
-//            } else if (day == currentDay + 2) {
-//                calendar.add(Calendar.DAY_OF_MONTH, 2);
+//            } else if (day == currentDay + sliding_view2) {
+//                calendar.add(Calendar.DAY_OF_MONTH, sliding_view2);
 ////            d = calendar.getTime();
 //            } else {
 ////            d = calendar.getTime();
 //            }
 //        }
-//        calendar.set(Calendar.HOUR_OF_DAY, getHour(str, 2));
-//        calendar.set(Calendar.MINUTE, getMinutes(str, 2));
+//        calendar.set(Calendar.HOUR_OF_DAY, getHour(str, sliding_view2));
+//        calendar.set(Calendar.MINUTE, getMinutes(str, sliding_view2));
 //        calendar.set(Calendar.SECOND, 0);
-////        d.setHours(getHour(str,2));
-////        d.setMinutes(getMinutes(str,2));
+////        d.setHours(getHour(str,sliding_view2));
+////        d.setMinutes(getMinutes(str,sliding_view2));
 ////        d.setSeconds(0);
 //
 ////        return d.getTime();

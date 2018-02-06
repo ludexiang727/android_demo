@@ -16,7 +16,7 @@ import android.widget.TextView;
 import demo.com.testdemo.R;
 
 /**
- * Created by ludexiang on 16/8/11.
+ * Created by ludexiang on sliding_view16/8/sliding_view11.
  */
 public class WaitForResponseMaskGuideView extends RelativeLayout implements View.OnClickListener {
     private ImageView mMaskWarnImg;

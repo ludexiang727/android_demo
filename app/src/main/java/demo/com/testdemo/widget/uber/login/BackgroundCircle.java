@@ -9,7 +9,7 @@ import android.util.AttributeSet;
 import android.view.View;
 
 /**
- * Created by ludexiang on 16/8/4.
+ * Created by ludexiang on sliding_view16/sliding_view8/sliding_view4.
  */
 public class BackgroundCircle extends View {
     private static final int LEFT_MARGIN = 100;

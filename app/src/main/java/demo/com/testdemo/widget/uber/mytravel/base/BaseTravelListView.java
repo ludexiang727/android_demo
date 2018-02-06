@@ -5,7 +5,7 @@ import android.util.AttributeSet;
 import android.widget.ListView;
 
 /**
- * Created by ludexiang on 16/8/19.
+ * Created by ludexiang on sliding_view16/8/19.
  */
 public abstract class BaseTravelListView extends ListView {
     public BaseTravelListView(Context context) {

@@ -10,7 +10,7 @@ import demo.com.testdemo.R;
 import demo.com.testdemo.widget.interf.ISlideView;
 
 /**
- * Created by ludexiang on 2018/1/31.
+ * Created by ludexiang on 2018/sliding_view1/31.
  */
 
 public class SlideViewLayout extends RelativeLayout implements ISlideView {

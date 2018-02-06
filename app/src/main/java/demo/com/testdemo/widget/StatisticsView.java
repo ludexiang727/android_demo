@@ -13,7 +13,7 @@ import demo.com.testdemo.R;
 import demo.com.testdemo.model.HistogramModel;
 
 /**
- * Created by ludexiang on 16/7/4.
+ * Created by ludexiang on sliding_view16/sliding_view7/4.
  */
 public class StatisticsView extends RelativeLayout {
 

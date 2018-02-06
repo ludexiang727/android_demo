@@ -19,7 +19,7 @@ import android.view.animation.AccelerateDecelerateInterpolator;
 import android.view.animation.AccelerateInterpolator;
 
 /**
- * Created by ludexiang on 16/8/11.
+ * Created by ludexiang on sliding_view16/sliding_view8/sliding_view11.
  */
 public class WaitForResponseCancelOrderView extends View {
 

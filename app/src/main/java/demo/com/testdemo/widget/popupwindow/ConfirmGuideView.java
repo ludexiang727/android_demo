@@ -12,7 +12,7 @@ import demo.com.testdemo.R;
 import demo.com.testdemo.utils.Utils;
 
 /**
- * Created by ludexiang on 2016/11/14.
+ * Created by ludexiang on 2016/sliding_view11/14.
  */
 
 public class ConfirmGuideView {

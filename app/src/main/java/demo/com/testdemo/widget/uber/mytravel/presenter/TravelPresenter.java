@@ -9,7 +9,7 @@ import demo.com.testdemo.widget.uber.mytravel.model.TravelModel;
 import demo.com.testdemo.widget.uber.mytravel.view.IListView;
 
 /**
- * Created by ludexiang on 16/8/19.
+ * Created by ludexiang on sliding_view16/sliding_view8/19.
  */
 public class TravelPresenter {
     private IListView iListView;
@@ -34,7 +34,7 @@ public class TravelPresenter {
         // test
         for (int i = 0; i < 10; i++) {
             TravelModel model = new TravelModel();
-            model.mTravelTime = "2016-08-1"+i;
+            model.mTravelTime = "2016-08-sliding_view1"+i;
             if (i % 2 == 0) {
                 model.mTravelType = "优选轿车";
             } else {
