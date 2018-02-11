@@ -1,13 +1,15 @@
 <merge xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:app="http://schemas.android.com/apk/res-auto"
   android:layout_width="match_parent"
-  android:layout_height="60dp"
-  android:layout_margin="10dp"
-  android:background="@drawable/slide_view_bg">
+  android:layout_height="match_parent"
+  android:layout_margin="10dp">
+  <!--
+  android:background="@drawable/slide_view_bg"-->
 
   <demo.com.testdemo.widget.SlideView
     android:layout_width="match_parent"
     android:layout_height="60dp"
+    android:layout_alignParentBottom="true"
     app:fillColor="#f05b48"
     app:isSlide="false"
     app:radius="4dp"
@@ -17,6 +19,7 @@
     android:id="@+id/slide_view"
     android:layout_width="match_parent"
     android:layout_height="60dp"
+    android:layout_alignParentBottom="true"
     app:fillColor="#ff0000"
     app:isSlide="true"
     app:radius="4dp"
@@ -36,14 +39,26 @@
   <View
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
     android:background="@drawable/slide_view_top"/>
 
   <TextView
     android:id="@+id/slide_view_content"
     android:layout_width="match_parent"
     android:layout_height="60dp"
+    android:layout_alignParentBottom="true"
     android:textColor="@android:color/white"
     android:textSize="17sp"
     android:text="text"
     android:gravity="center"/>
+
+  <demo.com.testdemo.widget.ScriptTextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:text="Test"
+    app:script_text="元"
+    app:script_color="#fb58c0"
+    app:script_direction="right"
+    app:script_loc="top"/>
 </merge>
