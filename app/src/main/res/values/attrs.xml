@@ -43,6 +43,7 @@
     <declare-styleable name="ScriptTextView">
         <attr name="script_color" format="color"/>
         <attr name="script_text" format="string"/>
+        <attr name="script_text_size" format="dimension"/>
         <attr name="script_direction" format="enum">
             <enum name="right" value="0"/>
             <enum name="left" value="1"/>

@@ -28,37 +28,41 @@
       android:id="@+id/animation_view"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_centerVertical="true"
-      android:layout_alignParentLeft="true"
       android:layout_marginLeft="20dp"
+      android:layout_alignParentLeft="true"
+      android:layout_centerVertical="true"
+      app:lottie_autoPlay="true"
       app:lottie_fileName="arrow.json"
-      app:lottie_loop="true"
-      app:lottie_autoPlay="true" />
+      app:lottie_loop="true"/>
   </demo.com.testdemo.widget.SlideView>
 
-  <View
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_alignParentBottom="true"
-    android:background="@drawable/slide_view_top"/>
+  <!--<View-->
+  <!--android:layout_width="match_parent"-->
+  <!--android:layout_height="match_parent"-->
+  <!--android:layout_alignParentBottom="true"-->
+  <!--android:background="@drawable/slide_view_top"/>-->
 
   <TextView
     android:id="@+id/slide_view_content"
     android:layout_width="match_parent"
     android:layout_height="60dp"
     android:layout_alignParentBottom="true"
-    android:textColor="@android:color/white"
-    android:textSize="17sp"
+    android:gravity="center"
     android:text="text"
-    android:gravity="center"/>
+    android:textColor="@android:color/white"
+    android:textSize="17sp"/>
 
   <demo.com.testdemo.widget.ScriptTextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_centerInParent="true"
-    android:text="Test"
-    app:script_text="元"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:includeFontPadding="false"
+    android:text="30.00"
+    android:textSize="32sp"
     app:script_color="#fb58c0"
     app:script_direction="right"
-    app:script_loc="top"/>
+    app:script_loc="top"
+    app:script_text="元"
+    app:script_text_size="14sp"/>
 </merge>
