@@ -80,7 +80,7 @@ public class ScriptTextView extends AppCompatTextView {
     FontMetrics metrics = paint.getFontMetrics();
     float scriptHeight = metrics.descent - metrics.ascent;
     if (scriptDirection == DIRECTION_RIGHT) {
-      x = rectF.width() / 2 + 15;
+      x = rectF.width() / 2 + 20;
     } else if (scriptDirection == DIRECTION_LEFT) {
       x = 0;
     }
