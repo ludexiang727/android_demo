@@ -123,4 +123,13 @@
       android:layout_below="@id/method_cycle"
       android:onClick="onSlideView"
       android:layout_toRightOf="@id/bold_text"/>
+
+    <Button
+      android:id="@+id/fragments"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="onFragment"
+      android:layout_below="@id/slide_view"
+      android:onClick="onFragments"
+      android:layout_toRightOf="@id/bold_text"/>
 </RelativeLayout>

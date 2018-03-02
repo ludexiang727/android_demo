@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import demo.com.testdemo.activity.SlideActivity;
+import demo.com.testdemo.activity.SupportActivity;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -137,6 +138,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void onSlideView(View v) {
         Intent intent = new Intent(this, SlideActivity.class);
+        startActivity(intent);
+    }
+
+    public void onFragments(View v) {
+        Intent intent = new Intent(this, SupportActivity.class);
         startActivity(intent);
     }
 }

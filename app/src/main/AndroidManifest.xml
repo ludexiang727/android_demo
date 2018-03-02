@@ -72,6 +72,10 @@
     <activity
       android:name=".activity.SlideActivity"
       android:screenOrientation="portrait"/>
+
+    <activity
+      android:name=".activity.SupportActivity"
+      android:screenOrientation="portrait"/>
   </application>
 
 </manifest>

@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/activity_main"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  tools:context="com.example.lesson10_fragment2.MainActivity">
+
+  <Button
+    android:id="@+id/btn_add"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:onClick="add"
+    android:text="添加Fragment"
+    android:textAllCaps="false" />
+
+  <Button
+    android:id="@+id/btn_remove"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:onClick="remove"
+    android:text="移除Fragment"
+    android:textAllCaps="false" />
+
+  <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:onClick="replace"
+    android:text="替换Fragment"
+    android:textAllCaps="false" />
+
+  <Button
+    android:id="@+id/btn_attach"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:onClick="attach"
+    android:text="附加Fragment"
+    android:textAllCaps="false" />
+
+  <Button
+    android:id="@+id/btn_detach"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:onClick="detach"
+    android:text="移除附加Fragment"
+    android:textAllCaps="false" />
+
+  <Button
+    android:id="@+id/btn_show"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:onClick="show"
+    android:text="显示Fragment"
+    android:textAllCaps="false" />
+
+  <Button
+    android:id="@+id/btn_hide"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:onClick="hide"
+    android:text="隐藏Fragment"
+    android:textAllCaps="false" />
+
+  <!--动态加载，必须要给定一个空间用来加载Fragment 必须是一个FrameLayout !-->
+  <FrameLayout
+    android:id="@id/fl_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  </FrameLayout>
+</LinearLayout>
